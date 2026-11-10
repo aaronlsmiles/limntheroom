@@ -14,12 +14,13 @@ Card: P47 · Started: 30 Oct 2026 · Public slug: limntheroom (cleared 31 Oct 20
 | # | Date | What was tried | Result | Kept? | £ |
 |---|---|---|---|---|---|
 | P1 | 10 Nov | The probe: four arms on the glass take's first 10 s | No final model. Rubric 1 passes: 1 of 3 rated arms (seedance2_5). The gate passes: 1 of 3 (aleph2). gemini was refused by the API | — | 851 credits ≈ £6.70 |
+| R | 10 Nov | The keyframe rescue (D1): aleph2 with two gen4_image keyframes | Rubrics 1–2 pass; the gate fails narrowly (lag −2, 89.3 % of frames): Gate K | — | 296 credits |
 
 ## Run log
 | Date | Task | From | To | Why |
 |---|---|---|---|---|
 
-## Spend: 851 credits (≈ £6.70) of £50 · £ per keeper: n/a
+## Spend: 1,147 credits (≈ £9) of £50 · £ per keeper: n/a
 - Cap (Aaron, 10 Nov): aim to stay under £50; up to £60 is pre-approved for the worst case only.
 
 ## Links
@@ -34,7 +35,7 @@ Card: P47 · Started: 30 Oct 2026 · Public slug: limntheroom (cleared 31 Oct 20
   - Settled: the picker stride (3, stepping up only to fit).
 
 ## Next
-- **Waiting on Aaron (call 138): a deviation for the rescue's rater round.** The probe ran (10 Nov): no final model, and the draft model is seedance2_5. The registered rescue is blocked because no rater round exists for it. Options and the recommendation are in call 138.
+- **Waiting on Aaron: Gate K (call 140).** The rescue passed rubrics 1–2 but missed the alignment gate narrowly. Aaron chooses between stopping and the failure write-up (§19).
 - **The probe (Gate P1):** four arms on the glass take's first 10 s, each gated against that span; the blind rater rates them (round `probe`); then the model decision (Gate P2), the no-op null, κ_keep and the shift control rerun.
 - **Then:** drafts (Gate D), finals (Gate F), the render masks, addendum A1 per render, the lines job and H.
 - **Before the study:** blindpanel v0.2.0 needs its schema upgrade on the live database (`sql/schema.sql`); the throwaway live check must answer a Q2 option numbered 6 or higher and find it in the export.

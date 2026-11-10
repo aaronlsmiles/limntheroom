@@ -2,6 +2,27 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 10 Nov 2026 (morning): deviation D1 and the keyframe rescue; the study is at Gate K (hub calls 139–140)
+
+- **Deviation D1 (Aaron: "A", call 139).**
+  - A sixth rater round, `rescue`, with the probe's brief, agent and rubric. Built test-first; full suite 757 passed, 13 skipped.
+  - Entered in PREREGISTRATION §24 with its diff and what had been seen.
+  - Manifest addendum D1, which also rows the append-only registry: its registered state is a byte prefix of the current file.
+  - Pushed to the public repo (`18f680e`) before the rescue.
+- **The rescue, run as registered in §14.**
+  - Keyframes at 4.1 s and 4.6 s (the cue at 3.6 s + 0.5 and + 1.0): two gen4_image stills, each from the take's frame with the ink crop as reference and the fixed law-free prompt, 16 credits.
+  - The request is the probe's aleph2 request, prompt unchanged, plus the two timed keyframes. It, the keyframes and their source frames were hashed in a dated addendum and pushed (`6f634f7`) before the call.
+  - aleph2, seed 1: 280 credits.
+- **The keyframes:** gen4_image re-composed the scene (the page larger and shifted, the camera framing moved). aleph2 was asked to meet those frames at 4.1 s and 4.6 s.
+- **The result:**
+  - Rubric 1 yes, rubric 2 yes: a reaction named, to the glass. The blind rater's round `rescue` was valid on the first attempt.
+  - Rubric 3 **fails**, narrowly: lag −2 analysis frames (the gate allows ±1), and 89.3 % of frames pass (the rule needs 90 %); ρ 1.0.
+- **§14: the rescue does not pass rubrics 1 and 3, so the study goes to Gate K (§19).** At Gate K Aaron chooses between stopping and the failure write-up: the glass take ×3 rendered for the seam view, rated as registered, and written up.
+- **What the probe and the rescue show together:**
+  - The one model that kept the room's timing exactly (aleph2, no keyframes) did not bring the drawing to life.
+  - Every render that did bring it to life and react to the right cue drifted just outside the registered timing gate: seedance2_5 came back 0.29 s short, and aleph2 with keyframes lagged two frames with 89 % of frames aligned.
+- **Spend: 1,147 credits** (probe 851, keyframes 16, rescue 280), about £9 of the £50 target.
+
 ## 10 Nov 2026 (early morning): the probe (Gate P1), and a gap in the rescue (hub call 138)
 
 After Gate R and the completed archive visit. Four arms on the glass take's first 10 s, ink acting. Spend: 851 credits (the probe budget was 926), the first rows of `runs/runway-calls.jsonl`.

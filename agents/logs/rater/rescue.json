@@ -1,0 +1,88 @@
+{
+ "agent_sha256": "20e9451f3018feb1486ea77b0d9b80093fcb0a381f0d566936ea235124b48b5b",
+ "attempts": [
+  {
+   "agent": "blind-cue-rater",
+   "agent_sha256": "20e9451f3018feb1486ea77b0d9b80093fcb0a381f0d566936ea235124b48b5b",
+   "code": "b8c3f2f73bf",
+   "command_sha256": "78682cada2fd15e8a831c551f4870e21dbfbc3596772e9ff6eea25a2e45384ca",
+   "dispatch_sha256": "36e4246d3f816f3a716233cc22138e50b2d15317b35ea7fe9e0ed65f7f44bd82",
+   "dispatched_utc": "2026-11-10T05:01:25+00:00",
+   "identity": {
+    "agents": [
+     "blind-cue-rater"
+    ],
+    "model_turns": 4,
+    "models": [
+     "claude-opus-5-5"
+    ],
+    "stream": {
+     "cwd_is_folder": true,
+     "model": "claude-opus-5-5",
+     "tools": [
+      "Read"
+     ]
+    },
+    "system_prompt_sha256": [
+     "d4134a646f66e489959021db72523913552f5a7f82ca744df09bcdd1d631275f"
+    ],
+    "tools": [
+     "Read"
+    ]
+   },
+   "inventory_sha256": "70be1737bb2b69a6fff135ebc0da2dc7dcf28b94608666f421eaae3b5a1c5537",
+   "model": "claude-opus-5-5",
+   "n_items": 1,
+   "order_seed": "1e8e61f99f046d60",
+   "output_sha256": "4f9a3e6cd4f41c9da98744509f4ebfcf55f417a8d851a27435a1755059308623",
+   "prepared_utc": "2026-11-10T05:01:20+00:00",
+   "problems": [],
+   "q2_sha256": "48ddecc91efb61449a3cb8ca70533e393bf5a2d09a309068a57e38987c40494f",
+   "read_log": {
+    "context_files": [],
+    "other_tools": [],
+    "outside": {
+     "count": 0,
+     "sha256": []
+    },
+    "reads": [
+     "<folder>/rater-brief.md",
+     "<folder>/items.txt",
+     "<folder>/q1f604357d-1.png",
+     "<folder>/q1f604357d-2.png",
+     "<folder>/q1f604357d-3.png"
+    ],
+    "unlisted": {
+     "count": 0,
+     "sha256": []
+    },
+    "unread": []
+   },
+   "recorded_utc": "2026-11-10T05:01:39+00:00",
+   "run": {
+    "duration_ms": 13338,
+    "exit_code": 0,
+    "is_error": false,
+    "num_turns": 6,
+    "stop_reason": "end_turn",
+    "subtype": "success",
+    "terminal_reason": "completed",
+    "total_cost_usd": 0.1154018
+   },
+   "session_id": "1c012591-117a-4c88-afa9-d9fba328e80f",
+   "status": "recorded",
+   "store_sha256": "a5c6a727f76bcb7141ba4adf8d0d52cd6e7ef6111a111537a3ab1ad27e8b6f5b",
+   "transcript_sha256": "fadda44f14c97265ed34e61d75c0fb070a230b20773c2c4873bb3e401dc4e9de",
+   "valid": true
+  }
+ ],
+ "brief_sha256": "039d763909ed01597951a442b9f401c1230bb0a607f1150565f684e930f9ea08",
+ "kind": "probe-draft",
+ "refs_sha256": "b8ac84676103b520c289e7d2e95bbfe1aeff2c369223f14bd80fdcc281c847b4",
+ "result": {
+  "code": "b8c3f2f73bf",
+  "status": "rated"
+ },
+ "round": "rescue",
+ "schema": "p47-rater-ledger/2"
+}
