@@ -150,3 +150,54 @@ def test_more_than_one_session_needs_the_key_and_main_records_the_choice(tmp_pat
     assert ratings.main(["--key", str(key), "--rater", f"R1={p}", "--out", str(out)]) == 0
     rec = json.loads(out.read_text())
     assert rec["sessions"]["R1"] == {"visitor": "V0002", "reason": "the first complete session", "n_sessions": 2}
+
+
+# --- D3 (call 143): the failure path's study builds three of the key's items; --study restricts the key to them ---------
+def _wide_key():
+    """Three items sharing refs across the parts, as the real key does; the study builds two of them."""
+    e = {"g1": {"law": "ink.cup", "target": "The cup", "behaviour": "It shrinks"},
+         "g2": {"law": "gold.cup", "target": "The cup", "behaviour": "It glows, then dims"},
+         "x1": {"law": "ink.lamp", "target": "The lamp", "behaviour": "It hums"}}
+    return {"salt": "fixture", "questions": dict(KEY["questions"]), "clips": e, "baseline": json.loads(json.dumps(e))}
+
+
+STUDY = {"failure_path": True, "items": [{"ref": "g1", "law": "ink.cup"}, {"ref": "g2", "law": "gold.cup"}]}
+STUDY_ANSWERS = {("clips", "g1", "q1"): "The cup", ("clips", "g1", "q2"): "It shrinks",
+                 ("clips", "g2", "q1"): "The cup", ("clips", "g2", "q2"): "It hums",
+                 ("baseline", "g1", "q1b"): "The cup", ("baseline", "g1", "q2b"): "Can't tell",
+                 ("baseline", "g2", "q1b"): "The lamp", ("baseline", "g2", "q2b"): "It glows, then dims"}
+
+
+def test_a_study_manifest_restricts_the_key_to_the_items_it_built():
+    k = ratings.study_key(_wide_key(), STUDY)
+    assert sorted(k["clips"]) == sorted(k["baseline"]) == ["g1", "g2"]
+    assert k["questions"] == KEY["questions"] and k["clips"]["g2"] == _wide_key()["clips"]["g2"]
+    with pytest.raises(ValueError, match="not in the key"):
+        ratings.study_key(_wide_key(), {"items": [{"ref": "zz"}]})
+    with pytest.raises(ValueError, match="law disagrees"):
+        ratings.study_key(_wide_key(), {"items": [{"ref": "g1", "law": "gold.cup"}]})
+    with pytest.raises(ValueError, match="no items"):
+        ratings.study_key(_wide_key(), {"items": []})
+
+
+def test_with_a_study_the_first_session_that_answers_its_items_is_complete(tmp_path):
+    p = _sessions(tmp_path / "s.csv", dict(sorted(STUDY_ANSWERS.items())[:3]), STUDY_ANSWERS)
+    s = ratings.read_sessions(p)
+    assert ratings.choose_session(s, _wide_key()) == ("V0001", "no complete session: the first session")   # registered
+    assert ratings.choose_session(s, ratings.study_key(_wide_key(), STUDY)) == ("V0002", "the first complete session")
+
+
+def test_main_with_a_study_reports_its_laws_and_lists_the_rest(tmp_path):
+    key, study, out, reg = tmp_path / "key.json", tmp_path / "study.json", tmp_path / "out.json", tmp_path / "reg.json"
+    key.write_text(json.dumps(_wide_key()))
+    study.write_text(json.dumps(STUDY))
+    p = write_export(tmp_path / "r1.csv", STUDY_ANSWERS)
+    assert ratings.main(["--key", str(key), "--study", str(study), "--rater", f"R1={p}", "--out", str(out)]) == 0
+    rec = json.loads(out.read_text())
+    assert sorted(rec["laws"]) == ["gold.cup", "ink.cup"] and rec["not_in_study"] == ["ink.lamp"]
+    assert rec["study_items"] == ["g1", "g2"]
+    assert rec["laws"]["ink.cup"]["clip"]["law"] == {"k": 1, "n": 1, "rate": 1.0, "ci": rec["laws"]["ink.cup"]["clip"]["law"]["ci"]}
+    assert rec["laws"]["gold.cup"]["clip"]["q2"]["k"] == 0
+    assert ratings.main(["--key", str(key), "--rater", f"R1={p}", "--out", str(reg)]) == 0      # the registered run is unchanged
+    r = json.loads(reg.read_text())
+    assert "not_in_study" not in r and "study_items" not in r and r["laws"]["ink.lamp"]["clip"]["q1"]["n"] == 0

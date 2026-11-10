@@ -11,7 +11,8 @@ from seam import blind, frame_pick, points
 
 BRIEFS = blind.BRIEFS
 ALL = sorted(BRIEFS.glob("*.md"))
-TEMPLATES = ["rater-probe-draft.md", "rater-study-baseline.md", "rater-study-clips.md", "human-rater-study.md"]
+TEMPLATES = ["rater-probe-draft.md", "rater-study-baseline.md", "rater-study-clips.md", "human-rater-study.md",
+             "human-rater-study-failure-path.md"]       # the last: deviation D3 (call 143)
 PICKER_BRIEFS = ["prompt-frame.md", "take-mask-points.md", "render-mask-points.md"]
 ROOT = blind.ROOT
 
@@ -141,3 +142,31 @@ def test_the_clips_reference_is_the_ringed_baseline_picture():
                                   "rater-study-baseline.md", "rater-study-clips.md"])
 def test_long_folders_ask_for_batched_reads(name):
     assert "in parallel" in text(name)
+
+
+# --- D3 (call 143): the failure path's record is version 1 with the counts changed, and its invite is the one in §24 ---------
+FAILURE_PATH = "human-rater-study-failure-path.md"
+D3_CHANGES = [("It takes about 15 minutes.", "It takes about 5 minutes."),
+              ("eight still pictures, then eight short silent clips", "three still pictures, then three short silent clips"),
+              ("**Part 1, the stills** (eight,", "**Part 1, the stills** (three,"),
+              ("**Part 2, the clips** (eight,", "**Part 2, the clips** (three,")]
+
+
+def _from_the_invitation(t):
+    """Everything a rater receives, from the invitation on; the header paragraphs say which record this is."""
+    return t[t.index("## 1."):]
+
+
+def test_the_failure_path_record_is_version_1_with_the_counts_changed():
+    want = _from_the_invitation(text("human-rater-study.md"))
+    for old, new in D3_CHANGES:
+        assert want.count(old) == 1, old
+        want = want.replace(old, new)
+    assert _from_the_invitation(text(FAILURE_PATH)) == want
+    assert "eight" not in _from_the_invitation(text(FAILURE_PATH))
+
+
+def test_the_failure_path_invite_is_the_one_in_d3():
+    reg = _quote_block((ROOT / "PREREGISTRATION.md").read_text(encoding="utf-8"), "- *Invite text, failure path", "- *Why:*")
+    mine = _quote_block(text(FAILURE_PATH), "## 1.", "## 2.")
+    assert reg and mine == reg

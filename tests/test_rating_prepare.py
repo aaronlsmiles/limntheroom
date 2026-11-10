@@ -863,3 +863,63 @@ def test_the_blindpanel_cli_comes_only_from_the_flag_or_BLINDPANEL_CLI(built, wo
     with pytest.raises(P.PrepareError, match="BLINDPANEL_CLI"):
         P.prepare(a)
     assert not (tmp_path / "o" / "media").exists()
+
+
+# --- D3 (call 143): §19's failure path rates the glass take x3 only, with their sealed codes -----------------------------
+GLASS = [f"{t}-{m}" for t, m, c in RATED if c == "glass"]
+ALL_REFS = [f"{t}-{m}" for t, m, _ in RATED]
+
+
+def subset_inputs(work, d: Path, refs) -> Path:
+    """An inputs file in its own folder (beside a link to the fixture's sources) listing only `refs`."""
+    d.mkdir(parents=True, exist_ok=True)
+    if not (d / "src").exists():
+        (d / "src").symlink_to(work / "src")
+    doc = json.loads((work / "inputs.json").read_text())
+    p = d / "inputs.json"
+    p.write_text(json.dumps({**doc, "entries": [e for e in doc["entries"] if f"{e['take']}-{e['material']}" in refs]}))
+    return p
+
+
+def failure_args(work, inputs, out, sealed, *extra):
+    a = args(work, out, sealed, "--no-blindpanel", "--failure-path", *FAST, *extra)
+    a.inputs = str(inputs)
+    return a
+
+
+def test_the_failure_path_builds_the_glass_take_x3_with_their_sealed_codes(built, work, tmp_path):
+    assert built["failure_path"] is False                                   # the registered build
+    sealed = sealed_copy(work, tmp_path)
+    key_sha = sha(sealed / "answer-key.json")
+    m = P.prepare(failure_args(work, subset_inputs(work, tmp_path / "in", GLASS), tmp_path / "o", sealed))
+    key = json.loads((sealed / "answer-key.json").read_text())
+    assert m["failure_path"] is True and sorted(i["ref"] for i in m["items"]) == sorted(GLASS)
+    assert {i["ref"]: i["clip_code"] for i in m["items"]} == {r: key["codes"]["clips"][r] for r in GLASS}
+    assert {i["ref"]: i["panel_code"] for i in m["items"]} == {r: key["codes"]["panels"][r] for r in GLASS}
+    media = sorted(p.name for p in (tmp_path / "o" / "media").iterdir())
+    assert media == sorted([key["codes"]["clips"][r] + ".mp4" for r in GLASS] + [key["codes"]["panels"][r] + ".png" for r in GLASS])
+    st = json.loads((tmp_path / "o" / "studies" / "limn-r1" / "study.yaml").read_text().split("\n", 1)[1])
+    assert st["parts"]["clips"]["session_size"] == 3 and len(st["items"]["panels"]) == len(st["items"]["clips"]) == 3
+    assert st["scales"]["acts"]["labels"] == json.loads((sealed / "q2-options.json").read_text())["options"]   # unchanged
+    assert sha(sealed / "answer-key.json") == key_sha                       # the sealed key is read, never written
+    assert json.loads((sealed / "rating-manifest.json").read_text())["failure_path"] is True
+
+
+@pytest.mark.parametrize("refs, flag, match", [
+    (GLASS[:2], True, "failure path"), (GLASS + ["t02-ink"], True, "failure path"), (ALL_REFS, True, "failure path"),
+    (GLASS, False, "disagree")])
+def test_the_failure_path_takes_exactly_the_glass_three(built, work, tmp_path, refs, flag, match):
+    a = args(work, tmp_path / "o", sealed_copy(work, tmp_path), "--no-blindpanel", *FAST, *(["--failure-path"] if flag else []))
+    a.inputs = str(subset_inputs(work, tmp_path / "in", refs))
+    with pytest.raises(P.PrepareError, match=match):
+        P.prepare(a)
+    assert not (tmp_path / "o" / "media").exists()                          # nothing was encoded
+
+
+def test_the_failure_path_still_checks_the_whole_sealed_key(built, work, tmp_path):
+    sealed = sealed_copy(work, tmp_path)
+    key = json.loads((sealed / "answer-key.json").read_text())
+    key["codes"]["clips"]["t03-ink"] = "c00000"                             # an item the failure path does not build
+    (sealed / "answer-key.json").write_text(json.dumps(key))
+    with pytest.raises(P.PrepareError, match="t03-ink.*not the kit's code"):
+        P.prepare(failure_args(work, subset_inputs(work, tmp_path / "in", GLASS), tmp_path / "o", sealed))

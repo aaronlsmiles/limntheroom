@@ -4,7 +4,7 @@ Card: P47 · Started: 30 Oct 2026 · Public slug: limntheroom (cleared 31 Oct 20
 ## Criteria (registered in PREREGISTRATION §1, 10 Nov 2026)
 - Success:
   1. A stranger can wipe any take and see what was kept, what was redrawn and which cue fired which law.
-  2. 3–5 cold raters (two in person, the rest remote; call 115) rate the eight renders, with the hit rate per law reported against a still baseline, with intervals, null or not.
+  2. 3–5 cold raters (two in person, the rest remote; call 115) rate the eight renders (on the failure path, the glass take ×3: D3), with the hit rate per law reported against a still baseline, with intervals, null or not.
   3. The film (60–120 s, ending on the drawing still on the page) and the thesis are published and linked from the portfolio.
   - Also: registration is public before any generation; the contact hypothesis is reported whatever it shows.
 - Kill rule: no nameable reaction in 3 of 4 draft takes after two rounds → Gate K. Process kill: no probe arm, nor the keyframe rescue, brings the drawing to life out of its place on the page → Gate K.
@@ -36,7 +36,7 @@ Card: P47 · Started: 30 Oct 2026 · Public slug: limntheroom (cleared 31 Oct 20
   - Settled: the picker stride (3, stepping up only to fit).
 
 ## Next
-- **Waiting on Aaron (call 142):** deviation D3 (let `rating/prepare.py` build the failure path's three-item study), then the raters (Gate RT). The display-only seam view and the write-up follow.
+- **D3 done (call 143):** `rating/prepare.py build --failure-path` builds the glass take ×3 study; `analysis/ratings.py --study` scores it. Next: the remote host for the study (plan 9.1: no recipe exists, so it is built here), addendum A2, the live check, then Aaron's raters and invitations (Gate RT). The display-only seam view and the write-up follow.
 - **The probe (Gate P1):** four arms on the glass take's first 10 s, each gated against that span; the blind rater rates them (round `probe`); then the model decision (Gate P2), the no-op null, κ_keep and the shift control rerun.
 - **Then:** drafts (Gate D), finals (Gate F), the render masks, addendum A1 per render, the lines job and H.
 - **Before the study:** blindpanel v0.2.0 needs its schema upgrade on the live database (`sql/schema.sql`); the throwaway live check must answer a Q2 option numbered 6 or higher and find it in the export.

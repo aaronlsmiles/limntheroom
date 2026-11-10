@@ -2,6 +2,18 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 10 Nov 2026 (afternoon): deviation D3, the failure path's three-item rating study (hub call 143)
+
+- **Aaron (call 143):** "Deviation D3: agree with your recommendation."
+- **Why it was needed:** §19 says the failure path's glass ×3 are "rated as registered", but the registered build refused a study without all eight rated renders, and the registered invitation promises eight pictures.
+- **What changed (§24, D3), built test-first; the new tests failed before the code existed:**
+  - `rating/prepare.py build --failure-path`: the glass take ×3 only, with their sealed codes. Inputs holding anything else or less are refused, and the whole sealed key is still checked against all eight rated rows. Nothing else in the build changes.
+  - `analysis/ratings.py --study`: the key is restricted to the study's items. The session rule then counts a session complete when it answers the three, and the five laws with no item are listed as not in the study. The registered run, without `--study`, is reported first, beside it (§23).
+  - A new human record, `agents/briefs/human-rater-study-failure-path.md`: version 1 word for word, except "three" for "eight" (four places) and "about 5 minutes" for "about 15". Version 1 is not edited. Tests hold the new record to version 1 and to the invite quoted in D3.
+- **Not changed, disclosed:** `build` on the command line still demands `--seconds` or `--frames`, though §17 registers the length "with no length given". The study is built as the registered test does it (parse a placeholder, clear it), so the registered rule applies. The three re-renders are 12.708 s, so the copies are their first 12.0 s (288 frames at 24 fps).
+- **Suite:** 771 passed, 13 skipped. The 13 need the blindpanel CLI; run against a fresh checkout at tag `v0.2.0` (`dd45f85`, built from its lockfile), all 49 rating-build tests pass. Manifest addendum D3: 370 rows, all OK.
+- **Study ids:** the build uses the neutral prefix `rs` (`rs-r1` … `rs-r5`), not the default `limn`, so no rater's link carries a word of the project's name. The prefix is a build option, not a registered value.
+
 ## 10 Nov 2026 (morning, later): Gate K, the failure write-up; the glass take ×3 on seedance2_5 (hub calls 141–142)
 
 - **Aaron at Gate K:** the failure write-up (§19), not a stop.

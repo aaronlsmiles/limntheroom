@@ -80,6 +80,9 @@ Q1_OPTIONS = ["The glass of water", "The torch's light", "The pen", "A breath", 
 # takes.json `cue` -> (law cue, index into Q1_OPTIONS)
 CUES = {"glass": ("water", 0), "torch": ("light", 1), "pen": ("pen", 2), "breath": ("breath", 3),
         "note": ("note", 4), "hand": ("hand", 5)}
+# Deviation D3 (call 143): §19's failure path rates the glass take x3 (its ink, gold and paper rows) and nothing else.
+FAILURE_PATH_CUE = "glass"
+FAILURE_PATH_MATERIALS = ("gold", "ink", "paper")
 QUESTIONS = {"clip_target": "q1", "clip_behaviour": "q2", "base_target": "q1b", "base_behaviour": "q2b"}
 TEXT = {
     "title": "A short rating study",
@@ -609,17 +612,29 @@ def _rated_items(takes, laws) -> list[dict]:
     return out
 
 
-def load_inputs(path, takes, laws) -> list[dict]:
-    """Join the rated items with the inputs file's files and cue times; check they agree."""
+def failure_path_items(items) -> list[dict]:
+    """D3 (call 143): the glass take x3 out of the rated items: one take on the glass cue, with exactly its ink, gold
+    and paper rows."""
+    glass = [i for i in items if i["take"]["cue"] == FAILURE_PATH_CUE]
+    if (len({i["take"]["id"] for i in glass}) != 1
+            or sorted(i["take"]["target_material"] for i in glass) != sorted(FAILURE_PATH_MATERIALS)):
+        raise PrepareError(f"the failure path needs one glass take with exactly its {', '.join(FAILURE_PATH_MATERIALS)} "
+                           f"rows; the rated takes give {sorted(i['ref'] for i in glass)}")
+    return glass
+
+
+def load_inputs(path, takes, laws, failure_path=False) -> list[dict]:
+    """Join the rated items with the inputs file's files and cue times; check they agree. With `failure_path` (D3), the
+    items are the glass take x3 only."""
     try:
-        return _load_inputs(path, takes, laws)
+        return _load_inputs(path, takes, laws, failure_path)
     except KeyError as e:
         if isinstance(e, UnknownLaw):
             raise
         raise PrepareError(f"{Path(path).name}: an entry lacks {e}") from None
 
 
-def _load_inputs(path, takes, laws) -> list[dict]:
+def _load_inputs(path, takes, laws, failure_path=False) -> list[dict]:
     path = Path(path)
     doc = json.loads(path.read_text())
     if doc.get("schema") != INPUTS_SCHEMA or not isinstance(doc.get("entries"), list):
@@ -632,8 +647,12 @@ def _load_inputs(path, takes, laws) -> list[dict]:
             raise PrepareError(f"inputs: {k[0]}/{k[1]} appears twice")
         got[k] = e
     items = rated_items(takes, laws)
+    if failure_path:
+        items = failure_path_items(items)
     keys = [(i["take"]["id"], i["take"]["target_material"]) for i in items]
     extra, missing = sorted(set(got) - set(keys)), sorted(set(keys) - set(got))
+    if failure_path and (extra or missing):
+        raise PrepareError(f"the failure path rates the glass take x3 only: missing {missing}, not on it {extra}")
     if extra or missing:
         raise PrepareError(f"inputs and takes.json disagree: missing {missing}, not rated {extra}")
     out = []
@@ -758,7 +777,7 @@ def prepare(a) -> dict:
     studies = out / "studies"
     laws = load_laws(a.laws)
     takes = json.loads(Path(a.takes).read_text())
-    entries = load_inputs(a.inputs, takes, laws)
+    entries = load_inputs(a.inputs, takes, laws, failure_path=a.failure_path)
     if not a.no_blindpanel and not a.blindpanel:
         raise PrepareError("no blindpanel CLI: set BLINDPANEL_CLI or pass --blindpanel (bin/blindpanel.mjs in the blindpanel "
                            "repository checked out at tag v0.2.0, §3)")
@@ -768,7 +787,7 @@ def prepare(a) -> dict:
 
     # the sealed assignment: read, checked, never changed
     keyfile = sealed / "answer-key.json"
-    key = read_key(keyfile, entries)
+    key = read_key(keyfile, rated_items(takes, laws))     # the whole sealed key, also on the failure path (D3)
     salt, seed = key["salt"], key["seed"]
     clip_codes = {e["ref"]: key["codes"]["clips"][e["ref"]] for e in entries}
     panel_codes = {e["ref"]: key["codes"]["panels"][e["ref"]] for e in entries}
@@ -831,7 +850,7 @@ def prepare(a) -> dict:
         "items": [{"ref": i["ref"], "law": i["law"], "clip_code": i["clip_code"], "panel_code": i["panel_code"],
                    "clip_sha256": i["clip_sha"], "panel_sha256": i["panel_sha"], "cue_s": i["cue_s"],
                    "ring_bbox": i["ring_bbox"]} for i in items],
-        "q2_options": len(q2),
+        "q2_options": len(q2), "failure_path": bool(a.failure_path),
     }
     (sealed / "rating-manifest.json").write_text(json.dumps(manifest, indent=1, sort_keys=True, ensure_ascii=False) + "\n")
     return manifest
@@ -868,6 +887,8 @@ def parse_args(argv=None):
     b.add_argument("--no-blindpanel", action="store_true", help="write files only; skip lock, build and verify")
     b.add_argument("--force-lock", action="store_true", help="re-lock after a wording fix before any rating")
     b.add_argument("--banned-extra", help="a file of extra banned-terms lines")
+    b.add_argument("--failure-path", action="store_true",
+                   help="deviation D3 (call 143): the glass take x3 only, with their sealed codes (§19's failure path)")
     a = ap.parse_args(argv)
     if a.cmd == "build" and not (a.seconds or a.frames):
         ap.error("build needs --seconds or --frames: the copies' length is chosen, never defaulted to the shortest source")

@@ -2,7 +2,7 @@
 """The rating study's registered numbers (R0.8), per law, null or not.
 
     python analysis/ratings.py --key sealed/answer-key.json --rater R1=raw/R1/ratings.csv \
-        [--rater R2=...] --out analysis/out/ratings.json
+        [--rater R2=...] [--study sealed/rating-manifest.json] --out analysis/out/ratings.json
 
 Each --rater is one blindpanel v0.2 export (`ratings.csv`: visitor, instrument, part, position,
 item, question, score, flags, option) of that rater's own study id. If an export holds more than one
@@ -18,6 +18,10 @@ hit rate; baseline Q1b and Q2b hit rates; clip minus baseline (clip Q2 − basel
 difference beside it); Wilson 95 % intervals and n throughout. Fleiss' κ per question over its
 items, with option labels as categories (per-item-n form, equal to Fleiss with equal n; None
 when expected agreement is 1). Floats rounded to 12 significant digits.
+
+--study (deviation D3, call 143): the study's rating manifest. The key is restricted to the items that study built,
+so the session rule's "every item" means every item the rater was shown; the output lists those items and the laws
+with no item in the study, which are not reported with n = 0. Without it, the registered run.
 """
 import argparse
 import csv
@@ -55,6 +59,22 @@ def expected_answers(key):
     q = key["questions"]
     return ({(i, q[k]) for i in key["clips"] for k in ("clip_target", "clip_behaviour")}
             | {(i, q[k]) for i in key["baseline"] for k in ("base_target", "base_behaviour")})
+
+
+def study_key(key, study):
+    """D3 (call 143): the key restricted to the items a study built (`study`: its rating manifest). Refuses a study with
+    no items or an item twice, an item the key lacks, or an item whose law disagrees with the key's."""
+    items = study.get("items") or []
+    refs = [i["ref"] for i in items]
+    if not refs or len(set(refs)) != len(refs):
+        raise ValueError("the study manifest lists no items, or an item twice")
+    for i in items:
+        for part in ("clips", "baseline"):
+            if i["ref"] not in key[part]:
+                raise ValueError(f"study item {i['ref']} is not in the key's {part}")
+            if "law" in i and key[part][i["ref"]]["law"] != i["law"]:
+                raise ValueError(f"study item {i['ref']}: its law disagrees with the key")
+    return {**key, "clips": {r: key["clips"][r] for r in refs}, "baseline": {r: key["baseline"][r] for r in refs}}
 
 
 def choose_session(sessions, key):
@@ -167,8 +187,12 @@ def main(argv=None):
     ap.add_argument("--key", required=True)
     ap.add_argument("--rater", action="append", required=True, help="RATER_ID=path/to/ratings.csv")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--study", help="D3: the study's rating manifest (sealed/rating-manifest.json); the key is restricted "
+                                    "to the items it built")
     a = ap.parse_args(argv)
-    key = json.loads(Path(a.key).read_text())
+    full = key = json.loads(Path(a.key).read_text())
+    if a.study:
+        key = study_key(full, json.loads(Path(a.study).read_text()))
     raters, sessions = {}, {}
     for spec in a.rater:
         rid, _, path = spec.partition("=")
@@ -178,6 +202,9 @@ def main(argv=None):
         raters[rid] = read_export(path, key, choice=sessions[rid])
     rec = analyse(raters, key)
     rec["sessions"] = sessions
+    if a.study:
+        rec["study_items"] = sorted(key["clips"])
+        rec["not_in_study"] = sorted({v["law"] for v in full["clips"].values()} - {v["law"] for v in key["clips"].values()})
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(rec, indent=1, sort_keys=True) + "\n")

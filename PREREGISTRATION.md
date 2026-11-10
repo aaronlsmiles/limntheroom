@@ -499,3 +499,33 @@ Each step happens only after the one before, and each can be checked from timest
 - *Who decided:* Aaron at Gate K (call 141: "do the write-up and proceed"), on the controller's recommendation.
 - *What had been seen:* the probe and the rescue (renders, gate records, the blind rater's rubric answers; calls 138–140). No D, cell or human rating.
 - *What it touches:* the failure write-up's three renders, their gate results, the seam view, and their rating as registered. H stays not testable (fewer than 4 testable renders). The write-up quotes §19's phrase "why the model ignores the cues" and states the finding the data give instead.
+
+**D3, 10 Nov 2026: the failure path's rating study, three items.**
+- *What changed:*
+  - `rating/prepare.py build` gains `--failure-path`. It builds the study from the glass take ×3 only (the glass take's ink, gold and paper rows), refuses inputs that hold anything else or less, still checks the whole sealed answer key against all eight rated rows, and gives the three items their sealed codes. Nothing else in the build changes: the rating-copy length rule, the rings, the wording, the options and their orders, the seeded item order, the seed and the codes are as registered. The rating manifest records `failure_path`.
+  - `analysis/ratings.py` gains `--study`, the study's rating manifest. The key is restricted to the items that study built, so the session rule's "every item" means every item the rater was shown, and the five laws with no item in the study are listed as not in it instead of being reported with n = 0. Without `--study` it runs as registered; as §23 asks, that run is reported first, beside the D3 run.
+  - The invitation and the human record say "three" where they said "eight" (four places) and "about 5 minutes" where they said "about 15 minutes". The registered record, `agents/briefs/human-rater-study.md`, is not edited. The failure path's record is a new file, `agents/briefs/human-rater-study-failure-path.md` (rendered with the Q2 options to `sealed/briefs/study-human-failure-path.md`); tests hold it to version 1 word for word apart from those changes, and to the invite below.
+  - Tests: `tests/test_rating_prepare.py` gains three tests (six cases), `tests/test_ratings.py` three and `tests/test_briefs.py` two; the last also lists the new record among the templates.
+  - Hashes (manifest addendum D3): `rating/prepare.py` `7818a3d0d5002376bc7e3461e0a3af74e00f6ed2a2414f6d42e51b8183aae506` → `bb09a02f811886284090dd532365ff7e736ea3f3a32e6da5bfb19f696c1c5854`; `analysis/ratings.py` `79f896879141e1275f6950515aa3108862fb904fb2da35248347db944c853ab2` → `7f49f220457db56f96807770ed96f1e9a2fffa53b5aca5ec7156712fd7c0f959`; `tests/test_rating_prepare.py` `982470d436f55b71465be8cadef0cfe3b75f1c4fb11eb52f88aef31184a39235` → `0997c4c9a5096fcc4ee4e94564418038ae6bab9f762cd4fc03b54b7463c9c22c`; `tests/test_ratings.py` `975a058932935c30e4ab3741beb263e502969efd59feeab0d3980d24b28c3fd7` → `7e60b6a962d918b8acde773d90dd432a6449d9f30d16ae6485000bc6b1ed63fe`; `tests/test_briefs.py` `d7ce6bc9c116b1109d8413fb314cc1b5a9e1e1b911bc75162c760e449911adc4` → `1ceb594cb4e3dad2f7db41a5b71dc140d897106048368d6be1f671a7aba80754`; `agents/briefs/human-rater-study-failure-path.md` (new) `cd37dc88839fed8ef2f941ccd1f670c559fb2a56e7d3bb5f9a9259a8c28b97d5`; `sealed/briefs/study-human-failure-path.md` (new) `6e6f225d4724d3effa8d26103ad0dc0a6764304f9ad442b12ede3061007e7eda`.
+- *Invite text, failure path* (fixed; only the name, link and date are filled in):
+
+> Hi [name],
+>
+> Would you rate a short study for me? It takes about 5 minutes. You'll see three still pictures, then three short silent clips, and answer two multiple-choice questions about each. There's no answer I'm hoping for: I want your first honest read.
+>
+> Three requests:
+> 1. Rate alone, in one sitting, with no one watching or helping.
+> 2. Look nothing up. Don't search for anything about the pictures, the clips or the study.
+> 3. Don't discuss it with anyone, me included, until I tell you the study has closed (in about a week).
+>
+> Before you start, please reply with this sentence: "I confirm that I have not seen any video, image, page, code or notes from the project this study belongs to, and I will rate alone and look nothing up."
+>
+> Your link is [link]. It's yours alone, so please don't forward it. The study closes on [date].
+>
+> Thank you!
+
+- *Why:* §19 says the failure path's glass ×3 are "rated as registered", but the registered build refuses a study without all eight rated renders, and an invitation promising eight pictures would mislead the raters.
+- *Not changed:* `build` on the command line still refuses to run without `--seconds` or `--frames`, although §17 registers the length "with no length given". The registered test reaches that rule by clearing both after parsing, and the study is built the same way, so the copies' length is the registered one: the first 12.0 s, or the shortest of the three renders if one is shorter.
+- *Who decided:* Aaron (call 143: "Deviation D3: agree with your recommendation"), on the controller's proposal (call 142).
+- *What had been seen:* the failure path's three glass renders and their §16 seed-2 re-renders, with their gate records (none passes; calls 141–142), and the probe and rescue as in D2. No rating copy, study, D, cell, or human or machine rating existed.
+- *What it touches:* the rating study (§17) and its analysis. The study has three items, all on the glass take, so every Q1 and Q1b answer is the same cue; the per-law numbers exist for the three glass laws only, and Fleiss' κ is over three items. The machine rater rates the same three items. H is untouched: it is not testable on the failure path (D2).
