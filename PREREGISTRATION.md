@@ -486,4 +486,9 @@ Each step happens only after the one before, and each can be checked from timest
 
 ## 24. Deviations
 
-None yet.
+**D1, 10 Nov 2026: a rater round for the keyframe rescue.**
+- *What changed:* `seam/blind.py`'s fixed set of rater rounds gains a sixth, `rescue`, of the probe's kind: the same sealed brief (`probe-draft-rater.md`), the same agent and the same rubric, for one item. Diff: `ROUNDS` gains `"rescue": "probe-draft"` (one line and a comment), and `tests/test_blind.py` gains one test. Hashes: `seam/blind.py` `b7c8ac8695e1eaa4251e97e87634993420a963da4f93aec0cb5ec6c3149f2d1b` → `3da9bbc13758299f9f8049db096028b5aebab6e6f13fb14aa3952f3214aae5c2`; `tests/test_blind.py` `5722326f33436176eb70b9f370771adb886b4376396ed32dc6e9658fe4bea51b` → `6760b533311d04c6b3b7534f54bd7cd8fdb3f8e3976943ce1d15d3e09924fc4e` (manifest addendum D1).
+- *Why:* §14 says the rescue passes only if it passes rubric 1, which the blind rater answers, but the registered code had no round for it, and the probe round had closed. No other path runs the rescue as registered.
+- *Who decided:* Aaron (call 139), choosing between this, relaxing the gate so the seedance2_5 arm's short clip passes (not taken), and Gate K.
+- *What had been seen:* the probe's four arms (call 138): their renders, their gate records and the blind rater's rubric answers. aleph2 passed the gate but not rubric 1; seedance2_5 passed rubrics 1 and 2 but failed the gate on duration; kling_4 returned 4 s; gemini_omni_flash_1.1 was refused by the API. No D, cell or human rating existed.
+- *What it touches:* the model decision (Gate P2) only. The rescue itself runs exactly as registered in §14: aleph2, the probe's input, seed 1, keyframes at the cue's t + 0.5 s and + 1.0 s, made by gen4_image from the take's frames with the fixed prompt. Its request and keyframes are hashed in a dated manifest addendum before it is sent.

@@ -810,7 +810,9 @@ def contact_sheets(frames, times, *, cols=3, rows=3, tile=(640, 360)) -> list[np
 
 # --- the rater ----------------------------------------------------------------------------------
 RATER_KINDS = ("probe-draft", "study-baseline", "study-clips")
-ROUNDS = {"probe": "probe-draft", "draft-1": "probe-draft", "draft-2": "probe-draft",
+# `rescue`: deviation D1 (Aaron, 10 Nov 2026, call 139; PREREGISTRATION §24): the keyframe rescue's rubric 1 (§14) is
+# answered by the blind rater, and the registered set had no round for it once the probe round had closed.
+ROUNDS = {"probe": "probe-draft", "rescue": "probe-draft", "draft-1": "probe-draft", "draft-2": "probe-draft",
           "study-baseline": "study-baseline", "study-clips": "study-clips"}
 
 

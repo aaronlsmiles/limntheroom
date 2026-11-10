@@ -2,6 +2,26 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 10 Nov 2026 (early morning): the probe (Gate P1), and a gap in the rescue (hub call 138)
+
+After Gate R and the completed archive visit. Four arms on the glass take's first 10 s, ink acting. Spend: 851 credits (the probe budget was 926), the first rows of `runs/runway-calls.jsonl`.
+
+| Arm | Output | Gate (§6, span 0–10 s) | Rubric 1 (comes to life, out of its place) | Rubric 2 (names a reaction) |
+|---|---|---|---|---|
+| aleph2 | 1920×1080, 10.0 s, 280 credits | **pass** (ρ 1.0, lag 0, every frame) | no | no |
+| kling_4 | 1280×720, **4.04 s**, 151 credits | fail (duration, lag, frames) | can't tell | no |
+| seedance2_5 | 1280×720, **9.71 s**, 420 credits | fail (duration only; 97 % of frames pass, lag −1) | **yes** | **yes** (reacted to the glass) |
+| gemini_omni_flash_1.1 | refused by the API, nothing billed: `ratio` is accepted only in reference mode, and the registered arm sends 640:360 in edit mode | — | — | — |
+
+- **The rater:** one blind round (`probe`), valid on the first attempt. Only the pass counts and the cue are reported here, never a label.
+- **The gemini arm counts as failing** (§14, call 136): a re-run of the identical request would be refused the same way, so no deviation was made.
+- **§14's decisions:** no arm qualifies as the final model (aleph2 fails rubric 1; seedance fails the gate). The draft model is seedance2_5, the only arm that passes rubrics 1 and 2. So the registered keyframe rescue is next.
+- **Stopped: the rescue has no rater round.** §14 asks the rescue to pass rubric 1, which the blind rater answers. The code's rounds are a fixed set (`probe`, `draft-1`, `draft-2`, `study-baseline`, `study-clips`), and the probe round is closed. Adding a round is a change to registered code after outputs have been seen, so under §23 it is a deviation for Aaron. Nothing further was generated.
+- **Findings, whatever comes next:**
+  - The arm that kept the room exactly did not bring the drawing to life.
+  - The arm that brought it to life, reacting to the right cue, returned a slightly short clip, which the registered gate fails on duration.
+  - kling_4 returned 4 s from a 10 s input.
+
 ## 10 Nov 2026 (night, later): the independent gate review, and its fixes (hub call 136)
 
 A fresh referee (the gate-reviewer agent) read the registration, the code and the calls independently of this session. Verdict: **accept with changes**: no blocks; six fixes before the freeze; four notes. All were taken, each checked against the code first. Built test-first.

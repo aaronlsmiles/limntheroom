@@ -249,3 +249,12 @@ def test_record_rater_invalid_answers_and_unread_sheets(tmp_path):
               q2_path=q2_file(tmp_path))
     assert not rec["valid"]
     assert any("never read" in p for p in rec["problems"]) and any(".did" in p for p in rec["problems"])
+
+
+# --- deviation D1 (Aaron, 10 Nov, call 139): the keyframe rescue's rubric-1 round -------------------------------------------
+def test_the_rescue_has_its_own_round_with_the_probe_brief(tmp_path):
+    assert blind.ROUNDS["rescue"] == "probe-draft"
+    assert set(blind.ROUNDS) == {"probe", "rescue", "draft-1", "draft-2", "study-baseline", "study-clips"}
+    st = probe_folder(tmp_path, round_id="rescue", refs=("rescue-render",))
+    assert st["kind"] == "rater-probe-draft" and len(st["codes"]) == 1
+    assert ledger("rescue")["kind"] == "probe-draft"
