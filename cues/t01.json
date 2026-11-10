@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "cue": "hand",
+      "evidence": {
+        "enter_frame": 36,
+        "frames_present": 21,
+        "leave_frame": 57,
+        "open_at_end": false
+      },
+      "id": "e01",
+      "source": "detector:hands",
+      "t": 2.4,
+      "t_end": 3.8,
+      "target": null,
+      "what": "a hand comes into view"
+    },
+    {
+      "cue": "water",
+      "evidence": {
+        "area_px": 11688.0,
+        "centroid": [
+          679.5,
+          452.0
+        ],
+        "object": "glass",
+        "onset_frame": 54,
+        "settle_frame": 54
+      },
+      "id": "e02",
+      "source": "detector:props",
+      "t": 3.6,
+      "t_end": null,
+      "target": "ink",
+      "what": "the glass is set down"
+    }
+  ],
+  "fps": 15,
+  "n_frames": 192,
+  "schema": "p47-cues/1",
+  "size": [
+    1280,
+    720
+  ],
+  "take": "t01",
+  "vlm_log": []
+}

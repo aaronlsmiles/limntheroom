@@ -1,0 +1,218 @@
+{
+ "agent_sha256": "d48ccb0b3e7f8db7531ac959c90ece6a79f0183a7a2ac51b16f50a57940beb8a",
+ "brief": "agents/briefs/take-mask-points.md",
+ "brief_sha256": "ac7a19c45e31b080b3b6a4fe442c1da683891d92bfbdfd17ad7ef3cf0b86f11f",
+ "id": "t04c",
+ "kind": "take",
+ "rejections": [],
+ "schema": "p47-mask-points/2",
+ "steps": {
+  "place": {
+   "attempts": [
+    {
+     "agent": "blind-frame-picker",
+     "agent_sha256": "d48ccb0b3e7f8db7531ac959c90ece6a79f0183a7a2ac51b16f50a57940beb8a",
+     "code": "ba5d4b62505",
+     "command_sha256": "cf5f35a582097a108dbf8f0d524acabf83e67cf74217f73b77972595ccd83107",
+     "dispatch_sha256": "62c7b0f3ebd52b7eb15594b03fa0c407aefaadc1f8268e3c05276eca0311f77b",
+     "dispatched_utc": "2026-11-08T16:58:54+00:00",
+     "identity": {
+      "agents": [
+       "blind-frame-picker"
+      ],
+      "model_turns": 10,
+      "models": [
+       "claude-opus-5-5"
+      ],
+      "stream": {
+       "cwd_is_folder": true,
+       "model": "claude-opus-5-5",
+       "tools": [
+        "Read"
+       ]
+      },
+      "system_prompt_sha256": [
+       "db6ff00461c050c2e1e12b0d377799eb43b961f7788ad2f912ffd11fd6f5dfb3"
+      ],
+      "tools": [
+       "Read"
+      ]
+     },
+     "inventory_sha256": "215b6ba8226c93b7631544d27ba1e2c17ec9c6d828f275265c5b6ee810493735",
+     "model": "claude-opus-5-5",
+     "output": {
+      "not_found": [
+       "e"
+      ],
+      "objects": {
+       "a": [
+        {
+         "positive": true,
+         "still": 1,
+         "x": 640,
+         "y": 450
+        }
+       ],
+       "b": [
+        {
+         "positive": true,
+         "still": 1,
+         "x": 330,
+         "y": 228
+        },
+        {
+         "positive": false,
+         "still": 1,
+         "x": 340,
+         "y": 330
+        }
+       ],
+       "c": [
+        {
+         "positive": true,
+         "still": 1,
+         "x": 622,
+         "y": 232
+        },
+        {
+         "positive": false,
+         "still": 1,
+         "x": 622,
+         "y": 330
+        }
+       ],
+       "d": [
+        {
+         "positive": true,
+         "still": 1,
+         "x": 900,
+         "y": 235
+        },
+        {
+         "positive": false,
+         "still": 1,
+         "x": 900,
+         "y": 330
+        }
+       ]
+      }
+     },
+     "output_sha256": "807db40e756b7771ea0ad4b40462d290b44fdd03a78134107080cbd1eba89689",
+     "prepared_utc": "2026-11-08T16:58:54+00:00",
+     "problems": [],
+     "read_log": {
+      "context_files": [],
+      "other_tools": [],
+      "outside": {
+       "count": 0,
+       "sha256": []
+      },
+      "reads": [
+       "<folder>/agent-brief.md",
+       "<folder>/objects.txt",
+       "<folder>/stills.txt",
+       "<folder>/001.png",
+       "<folder>/002.png",
+       "<folder>/003.png",
+       "<folder>/004.png",
+       "<folder>/005.png",
+       "<folder>/006.png",
+       "<folder>/007.png",
+       "<folder>/008.png",
+       "<folder>/009.png",
+       "<folder>/010.png",
+       "<folder>/011.png",
+       "<folder>/012.png",
+       "<folder>/013.png",
+       "<folder>/014.png",
+       "<folder>/015.png",
+       "<folder>/016.png",
+       "<folder>/017.png",
+       "<folder>/018.png",
+       "<folder>/019.png",
+       "<folder>/020.png",
+       "<folder>/021.png",
+       "<folder>/022.png",
+       "<folder>/023.png",
+       "<folder>/024.png",
+       "<folder>/025.png",
+       "<folder>/026.png",
+       "<folder>/027.png",
+       "<folder>/028.png",
+       "<folder>/029.png",
+       "<folder>/030.png",
+       "<folder>/031.png",
+       "<folder>/032.png",
+       "<folder>/033.png",
+       "<folder>/034.png",
+       "<folder>/035.png",
+       "<folder>/036.png",
+       "<folder>/037.png",
+       "<folder>/038.png",
+       "<folder>/039.png",
+       "<folder>/040.png",
+       "<folder>/041.png",
+       "<folder>/042.png",
+       "<folder>/043.png",
+       "<folder>/044.png",
+       "<folder>/045.png",
+       "<folder>/046.png",
+       "<folder>/047.png",
+       "<folder>/048.png",
+       "<folder>/049.png",
+       "<folder>/050.png",
+       "<folder>/051.png",
+       "<folder>/052.png",
+       "<folder>/053.png",
+       "<folder>/054.png",
+       "<folder>/055.png",
+       "<folder>/056.png",
+       "<folder>/057.png",
+       "<folder>/058.png",
+       "<folder>/059.png",
+       "<folder>/060.png",
+       "<folder>/061.png",
+       "<folder>/062.png",
+       "<folder>/063.png",
+       "<folder>/064.png"
+      ],
+      "unlisted": {
+       "count": 0,
+       "sha256": []
+      },
+      "unread": []
+     },
+     "recorded_utc": "2026-11-08T16:59:54+00:00",
+     "run": {
+      "duration_ms": 58362,
+      "exit_code": 0,
+      "is_error": false,
+      "num_turns": 68,
+      "stop_reason": "end_turn",
+      "subtype": "success",
+      "terminal_reason": "completed",
+      "total_cost_usd": 0.8624495999999999
+     },
+     "session_id": "66c4c16e-b34d-4926-aade-3a511edef619",
+     "status": "recorded",
+     "store_sha256": "768e7f60fc442157fdda0a843bec33ddc82bcf7168b941f73f5dc5ba7a0e3f5c",
+     "transcript_sha256": "03469d8421390c2f71551f6c9b4bb5dabfed5961c22726783afd2b7bbf4cc70b",
+     "valid": true
+    }
+   ],
+   "result": {
+    "not_found": [
+     "hand"
+    ],
+    "objects": [
+     "home_gold",
+     "home_ink",
+     "home_paper",
+     "page"
+    ],
+    "status": "placed"
+   }
+  }
+ },
+ "video_sha256": "b2fc729894e5d76f859d7e49f6e0dbb47f2738bcd362a00f0c7c97f8c970cd7a"
+}

@@ -1,0 +1,184 @@
+{
+ "agent_sha256": "d48ccb0b3e7f8db7531ac959c90ece6a79f0183a7a2ac51b16f50a57940beb8a",
+ "brief": "agents/briefs/take-mask-points.md",
+ "brief_sha256": "ac7a19c45e31b080b3b6a4fe442c1da683891d92bfbdfd17ad7ef3cf0b86f11f",
+ "id": "t05c",
+ "kind": "take",
+ "rejections": [],
+ "schema": "p47-mask-points/2",
+ "steps": {
+  "place": {
+   "attempts": [
+    {
+     "agent": "blind-frame-picker",
+     "agent_sha256": "d48ccb0b3e7f8db7531ac959c90ece6a79f0183a7a2ac51b16f50a57940beb8a",
+     "code": "bdf848cc410",
+     "command_sha256": "e79fd72a9c83b954d7f1850ebe4398ff0e5ce8d0574fa14a37c5fbbb5f7540c5",
+     "dispatch_sha256": "eb60a8a1cc8628795d6552e9acdf1dac14aaf6e6e340890600521286a87d7797",
+     "dispatched_utc": "2026-11-09T19:12:29+00:00",
+     "identity": {
+      "agents": [
+       "blind-frame-picker"
+      ],
+      "model_turns": 7,
+      "models": [
+       "claude-opus-5-5"
+      ],
+      "stream": {
+       "cwd_is_folder": true,
+       "model": "claude-opus-5-5",
+       "tools": [
+        "Read"
+       ]
+      },
+      "system_prompt_sha256": [
+       "db6ff00461c050c2e1e12b0d377799eb43b961f7788ad2f912ffd11fd6f5dfb3"
+      ],
+      "tools": [
+       "Read"
+      ]
+     },
+     "inventory_sha256": "41c00c97366ee7b40913c85b5d99ec577f68ce77d0194a149ebde530fbde47ad",
+     "model": "claude-opus-5-5",
+     "output": {
+      "not_found": [
+       "e"
+      ],
+      "objects": {
+       "a": [
+        {
+         "positive": true,
+         "still": 1,
+         "x": 680,
+         "y": 450
+        }
+       ],
+       "b": [
+        {
+         "positive": true,
+         "still": 1,
+         "x": 470,
+         "y": 282
+        }
+       ],
+       "c": [
+        {
+         "positive": true,
+         "still": 1,
+         "x": 650,
+         "y": 292
+        }
+       ],
+       "d": [
+        {
+         "positive": true,
+         "still": 1,
+         "x": 845,
+         "y": 288
+        }
+       ],
+       "f": [
+        {
+         "positive": true,
+         "still": 10,
+         "x": 478,
+         "y": 430
+        },
+        {
+         "positive": false,
+         "still": 10,
+         "x": 590,
+         "y": 410
+        }
+       ]
+      }
+     },
+     "output_sha256": "7bb4c16feaff2fd370c2c05688637491284c54497e3674cb3fbb94514c2f5fed",
+     "prepared_utc": "2026-11-09T19:12:29+00:00",
+     "problems": [],
+     "read_log": {
+      "context_files": [],
+      "other_tools": [],
+      "outside": {
+       "count": 0,
+       "sha256": []
+      },
+      "reads": [
+       "<folder>/agent-brief.md",
+       "<folder>/objects.txt",
+       "<folder>/stills.txt",
+       "<folder>/001.png",
+       "<folder>/002.png",
+       "<folder>/003.png",
+       "<folder>/004.png",
+       "<folder>/005.png",
+       "<folder>/006.png",
+       "<folder>/007.png",
+       "<folder>/008.png",
+       "<folder>/009.png",
+       "<folder>/010.png",
+       "<folder>/011.png",
+       "<folder>/012.png",
+       "<folder>/013.png",
+       "<folder>/014.png",
+       "<folder>/015.png",
+       "<folder>/016.png",
+       "<folder>/017.png",
+       "<folder>/018.png",
+       "<folder>/019.png",
+       "<folder>/020.png",
+       "<folder>/021.png",
+       "<folder>/022.png",
+       "<folder>/023.png",
+       "<folder>/024.png",
+       "<folder>/025.png",
+       "<folder>/026.png",
+       "<folder>/027.png",
+       "<folder>/028.png",
+       "<folder>/029.png",
+       "<folder>/030.png",
+       "<folder>/031.png",
+       "<folder>/032.png",
+       "<folder>/033.png"
+      ],
+      "unlisted": {
+       "count": 0,
+       "sha256": []
+      },
+      "unread": []
+     },
+     "recorded_utc": "2026-11-09T19:13:15+00:00",
+     "run": {
+      "duration_ms": 45223,
+      "exit_code": 0,
+      "is_error": false,
+      "num_turns": 37,
+      "stop_reason": "end_turn",
+      "subtype": "success",
+      "terminal_reason": "completed",
+      "total_cost_usd": 0.4642888
+     },
+     "session_id": "1b5c7628-9b8d-468f-8e07-1c5294310caf",
+     "status": "recorded",
+     "store_sha256": "36666139c18681c6c979cc697cfffcf95e75fb0ec3c6f6545ca9bfa9e5f4b633",
+     "transcript_sha256": "2fffecac1bfba51f095a32a06496d158cc5e10195c7d99472e0eabdcb06d67c6",
+     "valid": true
+    }
+   ],
+   "result": {
+    "not_found": [
+     "hand"
+    ],
+    "objects": [
+     "home_gold",
+     "home_ink",
+     "home_paper",
+     "note",
+     "page"
+    ],
+    "status": "placed"
+   }
+  }
+ },
+ "video_sha256": "1578b50b6f54a4094a24666ddeef3ed71852e7609a7ea5c17e82ff4ef7cd00b3"
+}

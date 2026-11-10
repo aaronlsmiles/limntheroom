@@ -1,0 +1,166 @@
+[
+  {
+    "id": "t01",
+    "cue": "glass",
+    "target_material": "ink",
+    "target_position": "left",
+    "ring_bbox": [0.3297, 0.3486, 0.4148, 0.4472],
+    "touched_object": "glass",
+    "handheld": false,
+    "rated": true,
+    "seconds_target": 11,
+    "attempts": 3,
+    "paste": {
+      "crop": "ink",
+      "touched_mask": "glass",
+      "home_mask": "home_ink",
+      "scale": null
+    }
+  },
+  {
+    "id": "t01",
+    "cue": "glass",
+    "target_material": "gold",
+    "target_position": "centre",
+    "ring_bbox": [0.4742, 0.3514, 0.5563, 0.4458],
+    "touched_object": "glass",
+    "handheld": false,
+    "rated": true,
+    "seconds_target": 11,
+    "attempts": 3,
+    "paste": {
+      "crop": "gold",
+      "touched_mask": "glass",
+      "home_mask": "home_gold",
+      "scale": null
+    }
+  },
+  {
+    "id": "t01",
+    "cue": "glass",
+    "target_material": "paper",
+    "target_position": "right",
+    "ring_bbox": [0.618, 0.35, 0.7023, 0.4444],
+    "touched_object": "glass",
+    "handheld": false,
+    "rated": true,
+    "seconds_target": 11,
+    "attempts": 3,
+    "paste": {
+      "crop": "paper",
+      "touched_mask": "glass",
+      "home_mask": "home_paper",
+      "scale": null
+    }
+  },
+  {
+    "id": "t02",
+    "cue": "torch",
+    "target_material": "ink",
+    "target_position": "left",
+    "ring_bbox": [0.35, 0.3875, 0.4352, 0.4875],
+    "touched_object": "standing object",
+    "handheld": true,
+    "rated": true,
+    "seconds_target": 11,
+    "attempts": 3,
+    "paste": {
+      "crop": "ink",
+      "touched_mask": "standing_object",
+      "home_mask": "home_ink",
+      "scale": null
+    }
+  },
+  {
+    "id": "t03",
+    "cue": "pen",
+    "target_material": "ink",
+    "target_position": "left",
+    "ring_bbox": [0.3297, 0.3486, 0.4148, 0.4486],
+    "touched_object": "pen",
+    "handheld": false,
+    "rated": true,
+    "seconds_target": 11,
+    "attempts": 3,
+    "paste": {
+      "crop": "ink",
+      "touched_mask": "pen",
+      "home_mask": "home_ink",
+      "scale": null
+    }
+  },
+  {
+    "id": "t04",
+    "cue": "breath",
+    "target_material": "ink",
+    "target_position": "left",
+    "ring_bbox": [0.3289, 0.3486, 0.4156, 0.4472],
+    "touched_object": null,
+    "handheld": false,
+    "rated": true,
+    "seconds_target": 11,
+    "attempts": 3,
+    "paste": {
+      "crop": "ink",
+      "touched_mask": null,
+      "home_mask": "home_ink",
+      "page_mask": "page",
+      "scale": null
+    }
+  },
+  {
+    "id": "t05",
+    "cue": "note",
+    "target_material": "ink",
+    "target_position": "left",
+    "ring_bbox": [0.3289, 0.3486, 0.4148, 0.4486],
+    "touched_object": "note",
+    "handheld": false,
+    "rated": true,
+    "seconds_target": 11,
+    "attempts": 3,
+    "paste": {
+      "crop": "ink",
+      "touched_mask": "note",
+      "home_mask": "home_ink",
+      "scale": null
+    }
+  },
+  {
+    "id": "t06",
+    "cue": "hand",
+    "target_material": "ink",
+    "target_position": "left",
+    "ring_bbox": [0.3297, 0.3486, 0.4156, 0.4486],
+    "touched_object": "hand",
+    "handheld": false,
+    "rated": true,
+    "seconds_target": 11,
+    "attempts": 3,
+    "paste": {
+      "crop": "ink",
+      "touched_mask": "hand",
+      "home_mask": "home_ink",
+      "scale": null
+    }
+  },
+  {
+    "id": "t07",
+    "cue": "curtain call",
+    "target_material": [
+      "ink",
+      "gold",
+      "paper"
+    ],
+    "target_position": [
+      "left",
+      "centre",
+      "right"
+    ],
+    "touched_object": "torch",
+    "handheld": false,
+    "rated": false,
+    "seconds_target": 11,
+    "attempts": 3
+  }
+]

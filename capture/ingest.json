@@ -1,0 +1,1085 @@
+{
+ "rows": [
+  {
+   "attempt": "d",
+   "codec_source": "h264",
+   "duration_s": 12.867,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 386,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 71996584,
+    "path": "raw/plain-desk/t01-glass-d.MOV",
+    "sha256": "edf48d71ce5f151a76fea27f8c4ad33e06292008ebed8a52bac75702fa6d6a4d"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 11135611,
+     "path": "takes/t01d.analysis.mp4",
+     "sha256": "12c6f1a83be8ecb817a24e8e06ab5ff1940d0ac9c5c6842cfd81d1fd9869d7d1"
+    },
+    "render": {
+     "bytes": 34257435,
+     "path": "takes/t01d.render.mp4",
+     "sha256": "ba0aa8b2af5f4dcb5df7279905121254a455c1ccaafda7e6b99be45ea64a7899"
+    },
+    "wav": {
+     "bytes": 1235244,
+     "path": "takes/t01d.wav",
+     "sha256": "b2b7037d1d37d3120f525780ec6889e01e648342c530d24b45755c1ad0e381f1"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t01",
+   "take_id": "t01d",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "e",
+   "codec_source": "h264",
+   "duration_s": 12.9,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 387,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 73764518,
+    "path": "raw/t01-glass-e.MOV",
+    "sha256": "44fc0abc499346c7beae9401e728a8d6773a8e8f27ef65f27a0421c94b338b2d"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 11642832,
+     "path": "takes/t01e.analysis.mp4",
+     "sha256": "51e3892faf082cafc3f32faf61abd0765de3536382faa1a3f0638bd142ea306f"
+    },
+    "render": {
+     "bytes": 30130417,
+     "path": "takes/t01e.render.mp4",
+     "sha256": "7a3d5e6720afd3bcef1fc65d06b1c025708a67052029820252a49ab4081e787d"
+    },
+    "wav": {
+     "bytes": 1238444,
+     "path": "takes/t01e.wav",
+     "sha256": "fd49bb0c35c5ded431928f35e1a6d37ac072e8810209532cab767e238380e64e"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t01",
+   "take_id": "t01e",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "f",
+   "codec_source": "h264",
+   "duration_s": 12.767,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 383,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 72372251,
+    "path": "raw/t01-glass-f.MOV",
+    "sha256": "7bdd93f3a5ffedb1efc3bcb9188377d89ba9d650f26fdbd22fd464399c564e65"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 10401626,
+     "path": "takes/t01f.analysis.mp4",
+     "sha256": "3c21bf3ad26e32faba100783c2d1e3980c2e959510f422de0f1c3724ed849bb4"
+    },
+    "render": {
+     "bytes": 27843160,
+     "path": "takes/t01f.render.mp4",
+     "sha256": "311d50062fc8a02fa25980713df2469cda4d9dfb770fa0bf0f0f024c6893068d"
+    },
+    "wav": {
+     "bytes": 1225484,
+     "path": "takes/t01f.wav",
+     "sha256": "afb95fc36c20712ea78a5e572193ba42dbf7ac42cc130892c8750c120050df43"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t01",
+   "take_id": "t01f",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "c",
+   "codec_source": "h264",
+   "duration_s": 13.268,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 398,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 69297788,
+    "path": "raw/plain-desk/t02-torch-c.MOV",
+    "sha256": "54d6c3e424c45cc550cfa5c989be966d935e9c838ced7ef6a38ba479c8a64255"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 11172320,
+     "path": "takes/t02c.analysis.mp4",
+     "sha256": "8d56a501c7ab709a11d8a6316d525ab623c4e9bb3420b9409e7c20b012f9402a"
+    },
+    "render": {
+     "bytes": 32268516,
+     "path": "takes/t02c.render.mp4",
+     "sha256": "f4af018f1b3b668ea469752806a21caa4928098627d2a1a6ae7516d392ff2bd4"
+    },
+    "wav": {
+     "bytes": 1273644,
+     "path": "takes/t02c.wav",
+     "sha256": "7aec019c8a4001082db0c435a4b86368194edc453c1803b1033c9e628a6ada0f"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t02",
+   "take_id": "t02c",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "e",
+   "codec_source": "h264",
+   "duration_s": 13.267,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 398,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 75049756,
+    "path": "raw/t02-torch-e.MOV",
+    "sha256": "6e31dd366d7e14c0aa729fab5c104033680f8ba40374dcbe6ee746732e55c98d"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 19061900,
+     "path": "takes/t02e.analysis.mp4",
+     "sha256": "158b292bb8bcd57ee3f1798449eed02055608713d92e57bb1038eff2ce93ed13"
+    },
+    "render": {
+     "bytes": 39761039,
+     "path": "takes/t02e.render.mp4",
+     "sha256": "1febc5e72d32c9a583c1cfa1db8520818086e7dc8251d18fa373010120c17f2b"
+    },
+    "wav": {
+     "bytes": 1273644,
+     "path": "takes/t02e.wav",
+     "sha256": "c67a0c316206329546a1fca2e4c6d437792970087518aa86fde2ecfdc888ba4d"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t02",
+   "take_id": "t02e",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "a",
+   "codec_source": "hevc",
+   "duration_s": 12.725,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 59.961,
+   "frames_render": 382,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 75635740,
+    "path": "raw/plain-desk/t03-pen-a.MOV",
+    "sha256": "8c75e20b1fe615a34bfbd39a526be6753b9f410d09fa9a00c75ac941af19345f"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 15476311,
+     "path": "takes/t03a.analysis.mp4",
+     "sha256": "a3cde6964158e9d7d7d6f855254870168d42d696827518a84f64b80db92ddf5e"
+    },
+    "render": {
+     "bytes": 44810528,
+     "path": "takes/t03a.render.mp4",
+     "sha256": "3cf8623bef9b9f84d1fcd9715755033017dbd60f66e0ce9c397050036cb1077b"
+    },
+    "wav": {
+     "bytes": 1221484,
+     "path": "takes/t03a.wav",
+     "sha256": "4a9f61b392f32441cfc1df47897f86c06fdeca68034417b367bae4a048381da1"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t03",
+   "take_id": "t03a",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "b",
+   "codec_source": "h264",
+   "duration_s": 13,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 390,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 67780555,
+    "path": "raw/plain-desk/t03-pen-b.MOV",
+    "sha256": "b9e8a97e357bc1fdfe06a30a7938ecf748ce809a056a5a10ac474ba1ad274000"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 9702089,
+     "path": "takes/t03b.analysis.mp4",
+     "sha256": "b1b69f49ca8a5a6f05610cbd6d2674835027355ec9aa4566c259a49ddf364a61"
+    },
+    "render": {
+     "bytes": 31590121,
+     "path": "takes/t03b.render.mp4",
+     "sha256": "fb4b98b1b84a2c374f4bbb1785bb94be16b9a89b52694e312aa330689f6d8e43"
+    },
+    "wav": {
+     "bytes": 1248044,
+     "path": "takes/t03b.wav",
+     "sha256": "2d469d3020a4401bf84cb203732baeba607805acae17d4081b7eb245208d9670"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t03",
+   "take_id": "t03b",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "c",
+   "codec_source": "h264",
+   "duration_s": 12.767,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 383,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 72410854,
+    "path": "raw/t03-pen-c.MOV",
+    "sha256": "0cfa9a72b55a1f99cb0b019eb1ea6059cb186391d15e3086976f091c8512c7c6"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 10283138,
+     "path": "takes/t03c.analysis.mp4",
+     "sha256": "79ce0ac94f584a4fe38ad7f456f2bf32712e806d5ea857fdc1e8e37652f51ff3"
+    },
+    "render": {
+     "bytes": 27137755,
+     "path": "takes/t03c.render.mp4",
+     "sha256": "58d59c0179a4593d9631ba65f0d4a80860514429c2523fe39e1ee277f0b2ef1a"
+    },
+    "wav": {
+     "bytes": 1225484,
+     "path": "takes/t03c.wav",
+     "sha256": "1a6fd37432d294d2afa2915e1ada3e603094b4916c27b3e0bfbdc7821133b367"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t03",
+   "take_id": "t03c",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "c",
+   "codec_source": "h264",
+   "duration_s": 12.733,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 382,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 66397404,
+    "path": "raw/plain-desk/t04-breath-c.MOV",
+    "sha256": "d3287243e0682b65e5a770879bc3d5c2341be81cb26448a632e917518ca60a62"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 11043642,
+     "path": "takes/t04c.analysis.mp4",
+     "sha256": "b2fc729894e5d76f859d7e49f6e0dbb47f2738bcd362a00f0c7c97f8c970cd7a"
+    },
+    "render": {
+     "bytes": 35220291,
+     "path": "takes/t04c.render.mp4",
+     "sha256": "8bf0198d07f01462717d0f293b4a29e0be1141e2f2f199598f2242af0f289aff"
+    },
+    "wav": {
+     "bytes": 1222444,
+     "path": "takes/t04c.wav",
+     "sha256": "86e6335524df552dabf94e6f287a4ced6f29e2f1852e7c6c66b968226847fed8"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t04",
+   "take_id": "t04c",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "d",
+   "codec_source": "h264",
+   "duration_s": 12.602,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 378,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 71494171,
+    "path": "raw/t04-breath-d.MOV",
+    "sha256": "22f4801a53524ef3c91012908f59a84ea3cd7e15db1e70993e011e56f0b2826b"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 10239224,
+     "path": "takes/t04d.analysis.mp4",
+     "sha256": "69d61ddc1aa1c8bfcbcda277f1fa1756ac697ac15409daf4c74ce05fa63f1696"
+    },
+    "render": {
+     "bytes": 26935526,
+     "path": "takes/t04d.render.mp4",
+     "sha256": "54f8835f8affdbf3641d0fba1fd4f7501826bf90ffae7c42711358074b628f14"
+    },
+    "wav": {
+     "bytes": 1209644,
+     "path": "takes/t04d.wav",
+     "sha256": "917c6f4805443511cdc228a5fd58552004a33c788f0dacd76ee668ee9692e8da"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t04",
+   "take_id": "t04d",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "a",
+   "codec_source": "hevc",
+   "duration_s": 12.858,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 59.961,
+   "frames_render": 386,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 76603766,
+    "path": "raw/plain-desk/t05-note-a.MOV",
+    "sha256": "ae35d2482315d7b5618549468eb23d8621f2f1dddbecd99452c68f008e98ef08"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 16781481,
+     "path": "takes/t05a.analysis.mp4",
+     "sha256": "6ff9fef4ffa6a8909d61fd1acfe34de0087dd2a9ef3e8817e2b467100442fca2"
+    },
+    "render": {
+     "bytes": 48912132,
+     "path": "takes/t05a.render.mp4",
+     "sha256": "6ce464306c11e2918f5fe0b5a408b33d57e2d155d021760ed5b01390b55c2521"
+    },
+    "wav": {
+     "bytes": 1234444,
+     "path": "takes/t05a.wav",
+     "sha256": "d9d906e0a741b9a667cc9e2f977e55f24df88fd9c56ee84af12a4b9134b6f664"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t05",
+   "take_id": "t05a",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "b",
+   "codec_source": "h264",
+   "duration_s": 12.7,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 381,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 66123772,
+    "path": "raw/plain-desk/t05-note-b.MOV",
+    "sha256": "dcead48a1cff6c303894044241a103c9b601e730aa0da5684f7d4f13e86d010d"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 9821308,
+     "path": "takes/t05b.analysis.mp4",
+     "sha256": "8bb83aaa39a224b26951b5bafb5fcd36b94cb4a3f827786c096bd642e91808d5"
+    },
+    "render": {
+     "bytes": 31640240,
+     "path": "takes/t05b.render.mp4",
+     "sha256": "273a04a11537267e12d513dc5d2a09b9aa3b1e1171de9b2e2b100a5927710254"
+    },
+    "wav": {
+     "bytes": 1219244,
+     "path": "takes/t05b.wav",
+     "sha256": "417a083d7c01787fb80b68066e645181c246f59a6b2021ec1028d0850e5fc12d"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t05",
+   "take_id": "t05b",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "c",
+   "codec_source": "h264",
+   "duration_s": 12.933,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 388,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 73521744,
+    "path": "raw/t05-note-c.MOV",
+    "sha256": "bfffb088c8e14f4dc0cac8d2d8a295cefa451397e6ebdc16af131fe83f98374d"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 11992164,
+     "path": "takes/t05c.analysis.mp4",
+     "sha256": "1578b50b6f54a4094a24666ddeef3ed71852e7609a7ea5c17e82ff4ef7cd00b3"
+    },
+    "render": {
+     "bytes": 29813068,
+     "path": "takes/t05c.render.mp4",
+     "sha256": "683ae8ea0fc7d4c5675c8e5d3a29c37cc820807aaae68ff9ee2b2c095c2815c8"
+    },
+    "wav": {
+     "bytes": 1241644,
+     "path": "takes/t05c.wav",
+     "sha256": "a962edd2de4bf5b9c12a4746b04fe0a256ff9746ce06b802ec94d1993d6dd831"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t05",
+   "take_id": "t05c",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "b",
+   "codec_source": "h264",
+   "duration_s": 13.502,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 405,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 70631203,
+    "path": "raw/plain-desk/t06-hand-b.MOV",
+    "sha256": "6099cda2e8b67e8346615bd45d9a012c283a88104dc6fec3ba17898fa5c52445"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 10014800,
+     "path": "takes/t06b.analysis.mp4",
+     "sha256": "4d9d7ec2f6fb23aefe3c5e4cc565abb808beed897bf35952c366e84fff39c91c"
+    },
+    "render": {
+     "bytes": 32665996,
+     "path": "takes/t06b.render.mp4",
+     "sha256": "291fc6bdc09329240594d890da0ee1dd6e81991791ec527c872b1d01956aec02"
+    },
+    "wav": {
+     "bytes": 1296044,
+     "path": "takes/t06b.wav",
+     "sha256": "21f885656124f334b5f79694f71ece31a25d87de7a1cac4d06a37f213af3797c"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t06",
+   "take_id": "t06b",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "c",
+   "codec_source": "h264",
+   "duration_s": 13.667,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 410,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 77472406,
+    "path": "raw/t06-hand-c.MOV",
+    "sha256": "768d3db0ffc77881498fe9fffd1bf7887077d4da3006fb4659a8f7bcbb65fc91"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 11369564,
+     "path": "takes/t06c.analysis.mp4",
+     "sha256": "deac80af8bbdad295b020331546b14cbf4297661ca0a277fa1259f59900d73ed"
+    },
+    "render": {
+     "bytes": 29543205,
+     "path": "takes/t06c.render.mp4",
+     "sha256": "d1dbfb019a1cad78521d554d74985b2312ed347fba69b4dbbe11d77b9246c601"
+    },
+    "wav": {
+     "bytes": 1311884,
+     "path": "takes/t06c.wav",
+     "sha256": "de99cf9a4799f07a60c61c92c73be9f8a2ced6a1a46592e9f3d9c5ae086174a1"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t06",
+   "take_id": "t06c",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "a",
+   "codec_source": "hevc",
+   "duration_s": 12.873,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 59.961,
+   "frames_render": 386,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 77032605,
+    "path": "raw/plain-desk/t07-curtain-a.MOV",
+    "sha256": "200a3ec152f8ee849b74bbcb715db7050ec36a3fd1e82ba1b8c7b1bf481ccf98"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 17282704,
+     "path": "takes/t07a.analysis.mp4",
+     "sha256": "61fa895fbc63a32a4ff829d22aa02ce1e8ece2ed7b6f85c7789b713ba083d82d"
+    },
+    "render": {
+     "bytes": 50164692,
+     "path": "takes/t07a.render.mp4",
+     "sha256": "05c58076e26c0ab6909c212afbff6f5386681555d97b72db3f75ac00bf6e8d4e"
+    },
+    "wav": {
+     "bytes": 1235884,
+     "path": "takes/t07a.wav",
+     "sha256": "ab7726e058b88ccd75df953d255c0230b9dd8cc089ded7f3f21696bdf6f5f55e"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t07",
+   "take_id": "t07a",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "d",
+   "codec_source": "h264",
+   "duration_s": 12.833,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 385,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 61337756,
+    "path": "raw/plain-desk/t07-curtain-d.MOV",
+    "sha256": "ef1b1c439de602a813660ce80af88a9c3bf0660883ddcb6df40a8d624d654269"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 10314370,
+     "path": "takes/t07d.analysis.mp4",
+     "sha256": "637b8a3c3216c9bb8025262def35b1fa32da313c870faba4548b0892531c061d"
+    },
+    "render": {
+     "bytes": 31037111,
+     "path": "takes/t07d.render.mp4",
+     "sha256": "7f75863bf8f1ac106cc0c4c388c3ebefc426d401235d467e122c5fbec35e4465"
+    },
+    "wav": {
+     "bytes": 1231884,
+     "path": "takes/t07d.wav",
+     "sha256": "fbbae09d14a7f2acde1d7729c7c883277fa865dd979001e9f1139923e2842bd9"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t07",
+   "take_id": "t07d",
+   "vfr_detected": false,
+   "warnings": []
+  },
+  {
+   "attempt": "e",
+   "codec_source": "h264",
+   "duration_s": 12.9,
+   "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+   "fps_render": 30,
+   "fps_source": 29.996,
+   "frames_render": 387,
+   "has_audio": true,
+   "hdr_detected": false,
+   "hdr_evidence": "",
+   "hdr_kind": null,
+   "original": {
+    "bytes": 73552241,
+    "path": "raw/t07-curtain-e.MOV",
+    "sha256": "6a7a5ae3ce024f75f47811becd4d705f50ae1b91e36154b452c594f7095dcfed"
+   },
+   "outputs": {
+    "analysis": {
+     "bytes": 11181751,
+     "path": "takes/t07e.analysis.mp4",
+     "sha256": "6a8ff578711c005b01f82c3fb7bbdbf40c20a030329da0e633f491e996e4ae5d"
+    },
+    "render": {
+     "bytes": 28519390,
+     "path": "takes/t07e.render.mp4",
+     "sha256": "405579eff6c3f9a66d9d8175d16d30579a30d5e4c375ca8efef743ac44322b02"
+    },
+    "wav": {
+     "bytes": 1238284,
+     "path": "takes/t07e.wav",
+     "sha256": "f6dcaecd3361b1b3fd3a2669c9110a1e314884144dc918ca5386a88b1c07d353"
+    }
+   },
+   "pix_fmt_source": "yuv420p",
+   "recipe": {
+    "crf": 12,
+    "preset": "medium",
+    "tonemap": null,
+    "tonemap_peak": null
+   },
+   "rotation": 0,
+   "schema": "p47-ingest/1",
+   "size_analysis": [
+    1280,
+    720
+   ],
+   "size_render": [
+    1920,
+    1080
+   ],
+   "size_source": [
+    3840,
+    2160
+   ],
+   "take": "t07",
+   "take_id": "t07e",
+   "vfr_detected": false,
+   "warnings": []
+  }
+ ],
+ "schema": "p47-ingest/1"
+}

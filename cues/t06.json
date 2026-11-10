@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "cue": "hand",
+      "evidence": {
+        "enter_frame": 41,
+        "frames_present": 164,
+        "leave_frame": null,
+        "open_at_end": true
+      },
+      "id": "e01",
+      "source": "detector:hands",
+      "t": 2.733,
+      "t_end": null,
+      "target": "ink",
+      "what": "a hand comes into view"
+    }
+  ],
+  "fps": 15,
+  "n_frames": 205,
+  "schema": "p47-cues/1",
+  "size": [
+    1280,
+    720
+  ],
+  "take": "t06",
+  "vlm_log": []
+}

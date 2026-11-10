@@ -1,0 +1,104 @@
+{
+ "device": "mps",
+ "device_override": false,
+ "device_registered": "mps",
+ "frozen": {
+  "comfy_venv": {
+   "numpy": "2.5.2",
+   "opencv-contrib-python": "5.0.0.93",
+   "opencv-python": "5.0.0.93",
+   "opencv-python-headless": "5.0.0.93",
+   "python": "3.12.10",
+   "scikit-image": "0.26.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0"
+  },
+  "metrics_sha256": {
+   "metrics/inkstab.py": "8c15c791d2392445edabf4152f8a60f877a1afe3ab202b5c372fdfd734d7f4e5",
+   "metrics/masked.py": "9707ba7ba07a82234c14cc91fa1a21c3232779e5d8a64672ddc5e1e665a3f0a3"
+  }
+ },
+ "inkstab_version": "inkstab 1.0 (2026-08-12)",
+ "input_meta": {
+  "entry": {
+   "crop": "paper",
+   "home_mask": "home_paper",
+   "scale": null,
+   "touched_mask": "glass"
+  },
+  "fps": 15,
+  "heights": [
+   720,
+   1080
+  ],
+  "material": "paper",
+  "placement": {
+   "cue_frame": 54,
+   "direction": [
+    0.7093128340703061,
+    -0.7048938242197547
+   ],
+   "distance": 5.0,
+   "placement": "at_object",
+   "placement_frame": 54,
+   "s": 106.25,
+   "scale": 0.10613394650664065
+  },
+  "scale": 0.10613394650664065,
+  "schema": "p47-control-input/1",
+  "size": [
+   1280,
+   720
+  ],
+  "sources": {
+   "analysis": "3c21bf3ad26e32faba100783c2d1e3980c2e959510f422de0f1c3724ed849bb4",
+   "crop_rgba": "5d35f268e977f8082cbfdd83358f3e89b633931e5f8e0b9982625a4a2785ef47",
+   "masks": "2093b8b1ae452a8646dcb9aa29e8df6d17430bfa10df8a47afb4405c777b4e7e",
+   "render_input": "311d50062fc8a02fa25980713df2469cda4d9dfb770fa0bf0f0f024c6893068d"
+  },
+  "take": "t01",
+  "take_id": "t01f",
+  "window": {
+   "i0": 54,
+   "n": 138,
+   "t": 3.6
+  },
+  "xy": [
+   705,
+   343
+  ]
+ },
+ "m": 32,
+ "min_scored": 20,
+ "model": "kling_4",
+ "need": 0.95,
+ "netG_sha256": "ccabdcc3f5cf3c07cf65d58776acb21df7dfda825cdc70c9766a93fd62bfc488",
+ "null_height": 720,
+ "per_m": {
+  "32": {
+   "frac": 1.0,
+   "n_scored": 138,
+   "pass": true,
+   "threshold": 0.03346162583323517
+  },
+  "48": {
+   "frac": 1.0,
+   "n_scored": 138,
+   "pass": true,
+   "threshold": 0.03318588061701048
+  },
+  "64": {
+   "frac": 1.0,
+   "n_scored": 138,
+   "pass": true,
+   "threshold": 0.032859739841240354
+  }
+ },
+ "python": "/Users/aaron/tools/ComfyUI/.venv/bin/python",
+ "reason": null,
+ "stilldrawn": {
+  "commit": "62ec26162e5cab0ba0e6ce0fdf2689cd4d8b7d62",
+  "metrics_dirty": false
+ },
+ "testable": true
+}

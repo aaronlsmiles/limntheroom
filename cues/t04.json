@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "cue": "breath",
+      "evidence": {
+        "flow_confirmed": false,
+        "flow_peak": 0.184,
+        "noise_floor_db": -69.6,
+        "rise_db_peak": 55.7,
+        "rms_db_peak": -13.9,
+        "wav": "t04d.wav"
+      },
+      "id": "e01",
+      "source": "detector:breath",
+      "t": 3.557,
+      "t_end": 5.211,
+      "target": "ink",
+      "what": "someone breathes out across the page"
+    }
+  ],
+  "fps": 15,
+  "n_frames": 189,
+  "schema": "p47-cues/1",
+  "size": [
+    1280,
+    720
+  ],
+  "take": "t04",
+  "vlm_log": []
+}

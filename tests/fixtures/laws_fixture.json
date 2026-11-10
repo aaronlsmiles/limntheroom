@@ -1,0 +1,70 @@
+{
+  "decoys": [
+    "Decoy A (fixture)",
+    "Decoy B (fixture)"
+  ],
+  "laws": [
+    {
+      "behaviour": "Spins on the spot like a top. A fictional fixture law, not one of the project's laws.",
+      "clause": "spins on the spot like a top (fixture)",
+      "cue": "pen",
+      "id": "ink.pen",
+      "label": "Spun like a top (fixture)",
+      "material": "ink",
+      "rated": true,
+      "touches": "pen"
+    },
+    {
+      "behaviour": "Stands on its head. A fictional fixture law.",
+      "clause": "stands on its head (fixture)",
+      "cue": "hand",
+      "id": "ink.hand",
+      "label": "Stood on its head (fixture)",
+      "material": "ink",
+      "rated": true,
+      "touches": "hand"
+    },
+    {
+      "behaviour": "Juggles three dots. A fictional fixture law.",
+      "clause": "juggles three ink dots (fixture)",
+      "cue": "water",
+      "id": "ink.water",
+      "label": "Juggled dots (fixture)",
+      "material": "ink",
+      "rated": true,
+      "touches": "glass"
+    },
+    {
+      "behaviour": "Tips an imaginary hat. A fictional fixture law.",
+      "clause": "tips an imaginary hat (fixture)",
+      "cue": "water",
+      "id": "gold.water",
+      "label": "Tipped its hat (fixture)",
+      "material": "gold",
+      "rated": true,
+      "touches": "glass"
+    },
+    {
+      "behaviour": "Counts to three on its fingers. A fictional fixture law with no touched object.",
+      "clause": "counts to three on its fingers (fixture)",
+      "cue": "breath",
+      "id": "paper.breath",
+      "label": "Counted to three (fixture)",
+      "material": "paper",
+      "rated": false,
+      "touches": null
+    }
+  ],
+  "materials": {
+    "gold": {
+      "look": "a flat painted fixture drawing, never shaded or 3D"
+    },
+    "ink": {
+      "look": "a flat fixture line drawing, never shaded or 3D"
+    },
+    "paper": {
+      "look": "a flat cut-out fixture shape, never shaded or 3D"
+    }
+  },
+  "salt": "fixture-not-a-real-salt"
+}

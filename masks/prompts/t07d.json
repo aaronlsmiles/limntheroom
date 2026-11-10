@@ -1,0 +1,47 @@
+{
+ "not_found": [
+  "hand",
+  "torch"
+ ],
+ "objects": {
+  "home_gold": [
+   {
+    "frame": 0,
+    "positive": true,
+    "x": 625.0,
+    "y": 230.0
+   }
+  ],
+  "home_ink": [
+   {
+    "frame": 0,
+    "positive": true,
+    "x": 340.0,
+    "y": 218.0
+   }
+  ],
+  "home_paper": [
+   {
+    "frame": 0,
+    "positive": true,
+    "x": 905.0,
+    "y": 232.0
+   }
+  ],
+  "page": [
+   {
+    "frame": 0,
+    "positive": true,
+    "x": 640.0,
+    "y": 450.0
+   }
+  ]
+ },
+ "source": {
+  "agent_sha256": "d48ccb0b3e7f8db7531ac959c90ece6a79f0183a7a2ac51b16f50a57940beb8a",
+  "brief_sha256": "ac7a19c45e31b080b3b6a4fe442c1da683891d92bfbdfd17ad7ef3cf0b86f11f",
+  "code": "b30ba04123f",
+  "log": "agents/logs/take-mask-points/t07d.json"
+ },
+ "take": "t07d"
+}

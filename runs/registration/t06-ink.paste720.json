@@ -1,0 +1,88 @@
+{
+ "device": "mps",
+ "device_override": false,
+ "device_registered": "mps",
+ "inkstab_version": "inkstab 1.0 (2026-08-12)",
+ "input_meta": {
+  "entry": {
+   "crop": "ink",
+   "home_mask": "home_ink",
+   "scale": null,
+   "touched_mask": "hand"
+  },
+  "fps": 15,
+  "heights": [
+   720,
+   1080
+  ],
+  "material": "ink",
+  "placement": {
+   "cue_frame": 41,
+   "direction": [
+    0.9999785491591998,
+    0.006549902400944481
+   ],
+   "distance": 4.0,
+   "placement": "at_object",
+   "placement_frame": 48,
+   "s": 270.0,
+   "scale": 0.10529675921532394
+  },
+  "scale": 0.10529675921532394,
+  "schema": "p47-control-input/1",
+  "size": [
+   1280,
+   720
+  ],
+  "sources": {
+   "analysis": "deac80af8bbdad295b020331546b14cbf4297661ca0a277fa1259f59900d73ed",
+   "crop_rgba": "c8124943ab077da3bf2c60d1d88dc4f46fd53ce5ccf4ab3f128b42462a246c12",
+   "masks": "2848ada36a8857ce70d7fb050f454d7ee5cfe5254202e821ffa7b7adf66a0dda",
+   "render_input": "d1dbfb019a1cad78521d554d74985b2312ed347fba69b4dbbe11d77b9246c601"
+  },
+  "take": "t06",
+  "take_id": "t06c",
+  "window": {
+   "i0": 41,
+   "n": 164,
+   "t": 2.733
+  },
+  "xy": [
+   384,
+   252
+  ]
+ },
+ "m": 32,
+ "min_scored": 20,
+ "model": "kling_4",
+ "need": 0.95,
+ "netG_sha256": "ccabdcc3f5cf3c07cf65d58776acb21df7dfda825cdc70c9766a93fd62bfc488",
+ "null_height": 720,
+ "per_m": {
+  "32": {
+   "frac": 1.0,
+   "n_scored": 164,
+   "pass": true,
+   "threshold": 0.03398320249219637
+  },
+  "48": {
+   "frac": 1.0,
+   "n_scored": 164,
+   "pass": true,
+   "threshold": 0.03395762918533663
+  },
+  "64": {
+   "frac": 1.0,
+   "n_scored": 164,
+   "pass": true,
+   "threshold": 0.03396199171014154
+  }
+ },
+ "python": "/Users/aaron/tools/ComfyUI/.venv/bin/python",
+ "reason": null,
+ "stilldrawn": {
+  "commit": "62ec26162e5cab0ba0e6ce0fdf2689cd4d8b7d62",
+  "metrics_dirty": false
+ },
+ "testable": true
+}

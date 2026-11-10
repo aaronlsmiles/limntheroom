@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "cue": "hand",
+      "evidence": {
+        "enter_frame": 42,
+        "frames_present": 12,
+        "leave_frame": 54,
+        "open_at_end": false
+      },
+      "id": "e01",
+      "source": "detector:hands",
+      "t": 2.8,
+      "t_end": 3.6,
+      "target": null,
+      "what": "a hand comes into view"
+    },
+    {
+      "cue": "pen",
+      "evidence": {
+        "area_px": 6955.0,
+        "centroid": [
+          493.5,
+          499.3
+        ],
+        "object": "pen",
+        "onset_frame": 54,
+        "settle_frame": 54
+      },
+      "id": "e02",
+      "source": "detector:props",
+      "t": 3.6,
+      "t_end": null,
+      "target": "ink",
+      "what": "the pen is set down"
+    }
+  ],
+  "fps": 15,
+  "n_frames": 192,
+  "schema": "p47-cues/1",
+  "size": [
+    1280,
+    720
+  ],
+  "take": "t03",
+  "vlm_log": []
+}

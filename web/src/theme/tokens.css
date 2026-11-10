@@ -1,0 +1,35 @@
+/* Geist and Geist Mono (OFL), the house faces, self-hosted (copied from the StillDrawn Explorer's public/fonts). */
+@font-face { font-family: "Geist"; src: url("/fonts/geist-latin.woff2") format("woff2"); font-weight: 400 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("/fonts/geist-mono-latin.woff2") format("woff2"); font-weight: 400 600; font-style: normal; font-display: swap; }
+
+/* Paper and ink (the explorer's achromatic ledger). Here gold means KEPT, not selection. */
+:root {
+  color-scheme: light;
+  --ground: #e2e2de; --surface: #ecebe7; --raised: #d3d3ce;
+  --border: #cfcec7; --rule: #dcdbd5; --control: #8a857c;
+  --text: #1c1915; --muted: #574e44; --faint: #6b6359; --context: #8a857c;
+  --gold: #c4922a; --gold-line: #9a6a12; --on-gold: #1c1915;
+  --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --fs-title: 24px; --fs-section: 16px; --fs-body: 14px; --fs-small: 12px;
+  --gap: 16px; --pad: 16px; --margin: 24px;
+  --control-h: 32px; --bar-h: 48px;
+  --ease: cubic-bezier(.2, .7, .2, 1); --fast: 160ms;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground: #1c1915; --surface: #23201c; --raised: #2c2924;
+    --border: #37332d; --rule: #2e2a25; --control: #6e675d;
+    --text: #ecebe6; --muted: #b3aa9e; --faint: #9c9488; --context: #7d766b;
+    --gold: #d6a43c; --gold-line: #d6a43c;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #1c1915; --surface: #23201c; --raised: #2c2924;
+  --border: #37332d; --rule: #2e2a25; --control: #6e675d;
+  --text: #ecebe6; --muted: #b3aa9e; --faint: #9c9488; --context: #7d766b;
+  --gold: #d6a43c; --gold-line: #d6a43c;
+}
+@media (max-width: 640px) { :root { --margin: 16px; --control-h: 44px; } }

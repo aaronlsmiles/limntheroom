@@ -1,0 +1,311 @@
+{
+  "events": [
+    {
+      "cue": "hand",
+      "evidence": {
+        "enter_frame": 34,
+        "frames_present": 17,
+        "leave_frame": 51,
+        "open_at_end": false
+      },
+      "id": "e01",
+      "source": "detector:hands",
+      "t": 2.267,
+      "t_end": 3.4,
+      "target": null,
+      "what": "a hand comes into view"
+    },
+    {
+      "cue": "note",
+      "evidence": {
+        "box": [
+          405,
+          356,
+          149,
+          104
+        ],
+        "every": 3,
+        "first_frame": 51,
+        "min_reads": 3,
+        "reads": [
+          [
+            0,
+            null
+          ],
+          [
+            3,
+            null
+          ],
+          [
+            6,
+            null
+          ],
+          [
+            9,
+            null
+          ],
+          [
+            12,
+            null
+          ],
+          [
+            15,
+            null
+          ],
+          [
+            18,
+            null
+          ],
+          [
+            21,
+            null
+          ],
+          [
+            24,
+            null
+          ],
+          [
+            27,
+            null
+          ],
+          [
+            30,
+            null
+          ],
+          [
+            33,
+            null
+          ],
+          [
+            36,
+            "TIMO"
+          ],
+          [
+            39,
+            "JUMP"
+          ],
+          [
+            42,
+            "JUM"
+          ],
+          [
+            45,
+            "JUM"
+          ],
+          [
+            48,
+            "JU"
+          ],
+          [
+            51,
+            "JUMP"
+          ],
+          [
+            54,
+            "JUMP"
+          ],
+          [
+            57,
+            "JUMP"
+          ],
+          [
+            60,
+            "JUMP"
+          ],
+          [
+            63,
+            "JUMP"
+          ],
+          [
+            66,
+            "JUMP"
+          ],
+          [
+            69,
+            "JUMP"
+          ],
+          [
+            72,
+            "JUMP"
+          ],
+          [
+            75,
+            "JUMP"
+          ],
+          [
+            78,
+            "JUMP"
+          ],
+          [
+            81,
+            "JUMP"
+          ],
+          [
+            84,
+            "JUMP"
+          ],
+          [
+            87,
+            "JUMP"
+          ],
+          [
+            90,
+            "JUMP"
+          ],
+          [
+            93,
+            "JUMP"
+          ],
+          [
+            96,
+            "JUMP"
+          ],
+          [
+            99,
+            "JUMP"
+          ],
+          [
+            102,
+            "JUMP"
+          ],
+          [
+            105,
+            "JUMP"
+          ],
+          [
+            108,
+            "JUMP"
+          ],
+          [
+            111,
+            "JUMP"
+          ],
+          [
+            114,
+            "JUMP"
+          ],
+          [
+            117,
+            "JUMP"
+          ],
+          [
+            120,
+            "JUMP"
+          ],
+          [
+            123,
+            "JUMP"
+          ],
+          [
+            126,
+            "JUMP"
+          ],
+          [
+            129,
+            "JUMP"
+          ],
+          [
+            132,
+            "JUMP"
+          ],
+          [
+            135,
+            "JUMP"
+          ],
+          [
+            138,
+            "JUMP"
+          ],
+          [
+            141,
+            "JUMP"
+          ],
+          [
+            144,
+            "JUMP"
+          ],
+          [
+            147,
+            "JUMP"
+          ],
+          [
+            150,
+            "JUMP"
+          ],
+          [
+            153,
+            "JUMP"
+          ],
+          [
+            156,
+            "JUMP"
+          ],
+          [
+            159,
+            "JUMP"
+          ],
+          [
+            162,
+            "JUMP"
+          ],
+          [
+            165,
+            "JUMP"
+          ],
+          [
+            168,
+            "JUMP"
+          ],
+          [
+            171,
+            "JUMP"
+          ],
+          [
+            174,
+            "JUMP"
+          ],
+          [
+            177,
+            "JUMP"
+          ],
+          [
+            180,
+            "JUMP"
+          ],
+          [
+            183,
+            "JUMP"
+          ],
+          [
+            186,
+            "JUMP"
+          ],
+          [
+            189,
+            "JUMP"
+          ],
+          [
+            192,
+            "JUMP"
+          ]
+        ],
+        "word": "JUMP"
+      },
+      "id": "e02",
+      "source": "detector:note",
+      "t": 3.4,
+      "t_end": null,
+      "target": "ink",
+      "what": "a note reading \"JUMP\" is set down"
+    }
+  ],
+  "fps": 15,
+  "n_frames": 194,
+  "schema": "p47-cues/1",
+  "size": [
+    1280,
+    720
+  ],
+  "take": "t05",
+  "vlm_log": []
+}
