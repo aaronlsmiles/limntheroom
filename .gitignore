@@ -17,3 +17,7 @@ rating/studies/
 creature/scan/
 takes/
 blind/
+rating/host/public/
+rating/host/vendor/
+rating/host/node_modules/
+rating/host/.vercel/

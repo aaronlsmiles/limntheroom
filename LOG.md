@@ -2,6 +2,36 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 10 Nov 2026 (evening, later): the database, the live check and addendum A2 (hub call 145)
+
+- **Aaron chose option (c):** the controller applies the schema through the database provider's management interface, under his own login. The kit's v0.2.0 `sql/schema.sql` was applied unchanged (sha256 `0bc600d8…`), and `blindpanel` was added to the exposed schemas, alongside the ones already there.
+  - Checked: no rows; the caps at 500 a day and 20,000 in all; insert and select only for the server's key; nothing for the public roles; row-level security forced.
+- **The live check (§17), on a throwaway study id** built from the same sealed key and copies, in a scratch folder (the real build untouched). One session went in exactly as a browser sends it:
+  - stored, and a repeat of it refused;
+  - the kit's `export` from the live database holds Q2 options 7 and 9 on the clips and 12 on the baseline, with their labels;
+  - the database's own tally keeps options above 5.
+  - Then the throwaway's row was deleted and its study taken off the host. The submissions table is empty.
+- **Addendum A2, before any invitation:** 49 rows added to `MANIFEST.sha256` (419 in all, every row OK):
+  - the build inputs and the sealed rating manifest;
+  - the three rating copies and three ringed stills;
+  - for each of the five studies: its `study.yaml`, lock, banned-terms file and built `study.json`, `reveal.json` and `index.html`;
+  - the host code and the vendored kit (`npm pack` of blindpanel `v0.2.0`).
+- The CLI used is `bin/blindpanel.mjs` of the blindpanel `v0.2.0` checkout (`dd45f85`), sha256 `ad7e4a393aed6914c6287af7af409ef009812778ad7a26b4ddd2db9e655c8aa0`.
+- **Next:** Aaron's raters and invitations (Gate RT), with the failure path's invitation (D3). The window is 7 days from the first invitation.
+
+## 10 Nov 2026 (evening): the study host (hub call 144)
+
+- **Aaron:** "Go with your recommendation now." The study is hosted at a neutral address on the personal Vercel team. Raters must not reach the studio's site, so no studio or project word is in the address, the pages, the headers or the staged files. The address stays out of every public file until the window closes, because this repository is indexed and links to the studio.
+- **The pages** are the five verified builds, byte for byte (`rating/host/stage.sh` copies them, re-runs the kit's `verify` on each and refuses project words). Each rater's study lives in its own folder.
+- **Submissions.** One function passes each session to its own study's handler, the kit's `createSubmitHandler`, unchanged. The allowed origin comes from the environment. Tests for the routing, the refusals and the keep-warm were written first (5 pass).
+  - The daily keep-warm stops the free database from pausing during the window.
+  - `noindex` everywhere, a robots file that disallows all, and no referrer.
+- **The database:** the kit's Supabase store, in its own `blindpanel` schema (the kit's v0.2.0 SQL, unchanged) on a studio database that a shipped page does not use. The StillDrawn explorer's database, which runs blindpanel 0.1, is untouched.
+- **Checked live:**
+  - the pages return 200 with `noindex`, and a clip's bytes equal the built copy's;
+  - the API refuses an unknown study, a foreign origin and an unauthorised keep-warm.
+- **Waiting:** the schema needs Aaron's confirmation (the database connector asks a person to confirm its `revoke` and `drop trigger` statements). Then the live check on a throwaway id, addendum A2 (hashes only) and Gate RT.
+
 ## 10 Nov 2026 (afternoon): deviation D3, the failure path's three-item rating study (hub call 143)
 
 - **Aaron (call 143):** "Deviation D3: agree with your recommendation."

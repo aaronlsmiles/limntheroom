@@ -1,0 +1,8 @@
+{
+  "name": "study-host",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "dependencies": { "blindpanel": "file:vendor/blindpanel-0.2.0.tgz" }
+}

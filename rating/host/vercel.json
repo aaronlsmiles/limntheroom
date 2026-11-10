@@ -1,0 +1,35 @@
+{
+  "redirects": [
+    {
+      "source": "/:id(rs-[a-z0-9-]+)",
+      "destination": "/:id/",
+      "permanent": true
+    }
+  ],
+  "functions": {
+    "api/*.js": {
+      "includeFiles": "public/*/study.json"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/keepwarm",
+      "schedule": "23 6 * * *"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
+    }
+  ]
+}
