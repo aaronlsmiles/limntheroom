@@ -17,6 +17,21 @@ The registered outputs in `runs/registration/` record the local interpreter path
 - **Reading:** seedance kept the gold and paper renders aligned in every frame they have, and returned every clip about 0.06 s short of its input, as in the probe. In the ink render it re-synthesised the desk enough to move the residuals past ρ (1.0 px) from the first frame.
 - **By §16**, a render that fails the gate or comes back short is re-rendered once, always, with seed 2, and the re-render replaces the first whatever its outcome. The three seed-2 requests (the registered ones, seed changed) were hashed in a dated addendum and pushed before sending. The registry's row was updated: its registered state is still a byte prefix.
 
+- **The re-renders (§16, seed 2; 552 credits each, 12.708 s each)**, which replace the first renders for the study whatever their outcome:
+
+| Render (re-render) | Lag | Frames that pass | Gate |
+|---|---|---|---|
+| t01-gold | 0 | 99.5 % | fails on duration only (the last frame is missing, as before) |
+| t01-ink | 0 | 0 % | fails |
+| t01-paper | **5** | 0 % | fails |
+
+- **No glass render passes the registered gate.** H was never testable on three renders, and none is measured. The study's renders for rating are the three re-renders.
+- **Spend:** 4,459 credits (about £35): probe 851, keyframes 16, rescue 280, glass ×3 1,656, re-renders 1,656.
+- **Next, for Aaron:**
+  - The rating study, as §19 registers it, rates these three. `rating/prepare.py` refuses a study without all eight registered items, so building it needs a code change (deviation D3, proposed, not made).
+  - The raters and their invitations (Gate RT).
+  - A display-only seam view, labelled "not aligned, not measured".
+
 ## 10 Nov 2026 (morning): deviation D1 and the keyframe rescue; the study is at Gate K (hub calls 139–140)
 
 - **Deviation D1 (Aaron: "A", call 139).**
