@@ -2,6 +2,21 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 10 Nov 2026 (morning, later): Gate K, the failure write-up; the glass take ×3 on seedance2_5 (hub calls 141–142)
+
+- **Aaron at Gate K:** the failure write-up (§19), not a stop.
+- **Deviation D2:** the registration does not name the failure path's model, so it is filled with seedance2_5, the registered draft model, using its three glass requests as hashed at Gate R (§24). Pushed before rendering (`a9f590c`).
+- **First renders:** 552 credits each, 12.708 s each against the take's 12.767 s.
+
+| Render | Lag | Frames that pass | Gate |
+|---|---|---|---|
+| t01-gold | 0 | 99.5 % | fails on duration only: the last analysis frame is missing |
+| t01-paper | 0 | 99.5 % | fails on duration only |
+| t01-ink | 0 | 21.9 % (from frame 0, before anything moves; scale within 1 ± 0.003) | fails: frames and duration |
+
+- **Reading:** seedance kept the gold and paper renders aligned in every frame they have, and returned every clip about 0.06 s short of its input, as in the probe. In the ink render it re-synthesised the desk enough to move the residuals past ρ (1.0 px) from the first frame.
+- **By §16**, a render that fails the gate or comes back short is re-rendered once, always, with seed 2, and the re-render replaces the first whatever its outcome. The three seed-2 requests (the registered ones, seed changed) were hashed in a dated addendum and pushed before sending. The registry's row was updated: its registered state is still a byte prefix.
+
 ## 10 Nov 2026 (morning): deviation D1 and the keyframe rescue; the study is at Gate K (hub calls 139–140)
 
 - **Deviation D1 (Aaron: "A", call 139).**
