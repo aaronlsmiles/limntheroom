@@ -1,0 +1,26 @@
+{
+ "schema": "p47-rating-inputs/1",
+ "entries": [
+  {
+   "take": "t01",
+   "material": "ink",
+   "render": "../renders/finals/t01-ink.rerender.mp4",
+   "take_video": "../takes/t01f.analysis.mp4",
+   "cues": "../cues/t01.json"
+  },
+  {
+   "take": "t01",
+   "material": "gold",
+   "render": "../renders/finals/t01-gold.rerender.mp4",
+   "take_video": "../takes/t01f.analysis.mp4",
+   "cues": "../cues/t01-gold.json"
+  },
+  {
+   "take": "t01",
+   "material": "paper",
+   "render": "../renders/finals/t01-paper.rerender.mp4",
+   "take_video": "../takes/t01f.analysis.mp4",
+   "cues": "../cues/t01-paper.json"
+  }
+ ]
+}

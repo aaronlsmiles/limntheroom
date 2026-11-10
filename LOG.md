@@ -13,6 +13,12 @@ The registered outputs in `runs/registration/` record the local interpreter path
 - **Not changed, disclosed:** `build` on the command line still demands `--seconds` or `--frames`, though §17 registers the length "with no length given". The study is built as the registered test does it (parse a placeholder, clear it), so the registered rule applies. The three re-renders are 12.708 s, so the copies are their first 12.0 s (288 frames at 24 fps).
 - **Suite:** 771 passed, 13 skipped. The 13 need the blindpanel CLI; run against a fresh checkout at tag `v0.2.0` (`dd45f85`, built from its lockfile), all 49 rating-build tests pass. Manifest addendum D3: 370 rows, all OK.
 - **Study ids:** the build uses the neutral prefix `rs` (`rs-r1` … `rs-r5`), not the default `limn`, so no rater's link carries a word of the project's name. The prefix is a build option, not a registered value.
+- **D3 pushed publicly first** (`4bd2ca4`), then the study was built locally (`rating/inputs-failure-path.json`; the three §16 re-renders; stills from `takes/t01f.analysis.mp4` at each material's cue-sheet time, 3.6 s):
+  - five studies, three items each, validated, locked, built and verified by blindpanel v0.2.0, plus the builder's own checks (tally off, codes-only reveal, code-named media);
+  - copies 288 frames each (H.264, 1280×720);
+  - the sealed key unchanged (`a65f7f13…`); each ring on its own creature (checked by eye on the three stills).
+  - A throwaway session through the kit's `export` scores in both analyses: the registered run reports eight laws (five with n = 0), the D3 run the three glass laws, with the other five listed as not in the study. Nothing is deployed.
+- **Open before Gate RT:** the remote host (plan 9.1), its live check and addendum A2. The live database named in STATUS is the StillDrawn explorer's, which a shipped page uses.
 
 ## 10 Nov 2026 (morning, later): Gate K, the failure write-up; the glass take ×3 on seedance2_5 (hub calls 141–142)
 

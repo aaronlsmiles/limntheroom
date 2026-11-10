@@ -36,7 +36,7 @@ Card: P47 · Started: 30 Oct 2026 · Public slug: limntheroom (cleared 31 Oct 20
   - Settled: the picker stride (3, stepping up only to fit).
 
 ## Next
-- **D3 done (call 143):** `rating/prepare.py build --failure-path` builds the glass take ×3 study; `analysis/ratings.py --study` scores it. Next: the remote host for the study (plan 9.1: no recipe exists, so it is built here), addendum A2, the live check, then Aaron's raters and invitations (Gate RT). The display-only seam view and the write-up follow.
+- **D3 done (call 143):** `rating/prepare.py build --failure-path` builds the glass take ×3 study; `analysis/ratings.py --study` scores it. The five studies (`rs-r1`…`rs-r5`) are built and verified locally. Next: the remote host (plan 9.1; Aaron to choose, call 143), its live check and addendum A2, then Aaron's raters and invitations (Gate RT). The display-only seam view and the write-up follow.
 - **The probe (Gate P1):** four arms on the glass take's first 10 s, each gated against that span; the blind rater rates them (round `probe`); then the model decision (Gate P2), the no-op null, κ_keep and the shift control rerun.
 - **Then:** drafts (Gate D), finals (Gate F), the render masks, addendum A1 per render, the lines job and H.
 - **Before the study:** blindpanel v0.2.0 needs its schema upgrade on the live database (`sql/schema.sql`); the throwaway live check must answer a Q2 option numbered 6 or higher and find it in the export.
