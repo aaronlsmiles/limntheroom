@@ -492,3 +492,10 @@ Each step happens only after the one before, and each can be checked from timest
 - *Who decided:* Aaron (call 139), choosing between this, relaxing the gate so the seedance2_5 arm's short clip passes (not taken), and Gate K.
 - *What had been seen:* the probe's four arms (call 138): their renders, their gate records and the blind rater's rubric answers. aleph2 passed the gate but not rubric 1; seedance2_5 passed rubrics 1 and 2 but failed the gate on duration; kling_4 returned 4 s; gemini_omni_flash_1.1 was refused by the API. No D, cell or human rating existed.
 - *What it touches:* the model decision (Gate P2) only. The rescue itself runs exactly as registered in §14: aleph2, the probe's input, seed 1, keyframes at the cue's t + 0.5 s and + 1.0 s, made by gen4_image from the take's frames with the fixed prompt. Its request and keyframes are hashed in a dated manifest addendum before it is sent.
+
+**D2, 10 Nov 2026: the model for the failure write-up.**
+- *What changed:* nothing in a rule. The registration does not say which model renders the failure path's glass take ×3 (§19), so this fills that gap: **seedance2_5**, the registered draft model (§14), with its three glass requests exactly as compiled and hashed at Gate R (`sealed/requests/real/t01-{ink,gold,paper}-seedance2_5.json`). No new prompt, keyframe or request.
+- *Why:* it is the only probe arm that passed rubrics 1 and 2, and it kept the drawing in its own line. The rescue's gen4_image keyframes re-composed the scene and changed the creature's design, and plain aleph2 brought nothing to life to rate.
+- *Who decided:* Aaron at Gate K (call 141: "do the write-up and proceed"), on the controller's recommendation.
+- *What had been seen:* the probe and the rescue (renders, gate records, the blind rater's rubric answers; calls 138–140). No D, cell or human rating.
+- *What it touches:* the failure write-up's three renders, their gate results, the seam view, and their rating as registered. H stays not testable (fewer than 4 testable renders). The write-up quotes §19's phrase "why the model ignores the cues" and states the finding the data give instead.
