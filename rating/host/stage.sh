@@ -2,12 +2,15 @@
 # Stage the rater studies for the study host: each rating/studies/<id>/dist copied byte for byte to public/<id>/,
 # a robots file that disallows everything, then the checks: copies identical, no project or studio word anywhere a
 # rater can fetch, the kit's verify on each study, and the host's tests. Deploy only after this passes.
+# Usage: ./stage.sh [study ids...]   (no ids: every built study). Only the named studies go live.
 set -euo pipefail
 cd "${0:A:h}"
 BP=${BLINDPANEL_CLI:?set BLINDPANEL_CLI to the v0.2.0 checkout bin/blindpanel.mjs}
 rm -rf public && mkdir public
-for d in ../studies/*/(/); do
-  id=${d:t}
+ids=("$@"); (( ${#ids} )) || ids=(../studies/*/(/:t))
+for id in $ids; do
+  d=../studies/$id
+  [[ -f $d/study.yaml ]] || { echo "no built study $id"; exit 1; }
   cp -R "$d/dist" "public/$id"
   diff -r "$d/dist" "public/$id" >/dev/null || { echo "copy of $id differs"; exit 1; }
   node "$BP" verify "$d/study.yaml" --dist "public/$id" >/dev/null || { echo "verify failed for $id"; exit 1; }

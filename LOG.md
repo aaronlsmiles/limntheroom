@@ -2,6 +2,16 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 12 Nov 2026: the raters' links, and the author's own session (hub call 146)
+
+- **Aaron took the study himself as `rs-r1`** (one session, 12 Nov). He knows the laws and the shoot, and sent no declaration, so §17 excludes it: it stays in the database, is reported as the author's test session and is not analysed. `rs-r1` is given to no one else.
+- **Raters:** five, each with a study id matching the number Aaron already uses for them in his other studies: `rs-r2`, `rs-r4`, `rs-r5`, `rs-r6`, `rs-r7`.
+  - The build was rerun for seven ids. The copies, stills and the five existing study files are byte-identical; `rs-r6` and `rs-r7` are new.
+  - Only the five rater studies are on the host; `rs-r1` and `rs-r3` are off it, and the API refuses them.
+  - `stage.sh` now takes the list of studies to put live.
+- **Addendum A2b, before any invitation:** the two new studies' files, plus the changed rating manifest and `stage.sh` (manifest all OK).
+- **The declaration** is the reply the registered invitation asks for, before rating. It is not on the study pages. Raters are asked to reply before they open their link, since the database keeps only the day a session arrives.
+
 ## 10 Nov 2026 (evening, later): the database, the live check and addendum A2 (hub call 145)
 
 - **Aaron chose option (c):** the controller applies the schema through the database provider's management interface, under his own login. The kit's v0.2.0 `sql/schema.sql` was applied unchanged (sha256 `0bc600d8…`), and `blindpanel` was added to the exposed schemas, alongside the ones already there.
