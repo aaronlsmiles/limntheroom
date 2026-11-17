@@ -1,0 +1,25 @@
+{
+  "clauses": [
+    {
+      "clause": null,
+      "cue": "hand",
+      "event": "e01",
+      "law": null,
+      "t": 2.4,
+      "t_clip": 2.4
+    },
+    {
+      "clause": "At 3.60 s, when the glass is set down, it walks to the foot of the glass, dips one toe at its edge, recoils as its wet ink starts to run, then backs away and keeps its distance.",
+      "cue": "water",
+      "event": "e02",
+      "law": "ink.water",
+      "t": 3.6,
+      "t_clip": 3.6
+    }
+  ],
+  "material": "ink",
+  "model": "aleph2",
+  "prompt_chars": 725,
+  "schema": "p47-trace/1",
+  "take": "t01"
+}

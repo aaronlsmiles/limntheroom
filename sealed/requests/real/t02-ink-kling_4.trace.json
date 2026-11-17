@@ -1,0 +1,17 @@
+{
+  "clauses": [
+    {
+      "clause": "At 2.67 s, when the torch's beam lands on the ink drawing, it ducks behind the object standing upright on the desk beside it and hides there.",
+      "cue": "light",
+      "event": "e01",
+      "law": "ink.light",
+      "t": 2.667,
+      "t_clip": 2.667
+    }
+  ],
+  "material": "ink",
+  "model": "kling_4",
+  "prompt_chars": 752,
+  "schema": "p47-trace/1",
+  "take": "t02"
+}

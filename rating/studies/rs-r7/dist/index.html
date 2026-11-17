@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>A short rating study</title>
+<link rel="stylesheet" href="blindpanel/ui/style.css">
+<style>
+  html { background: #e2e2de; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { html { background: #1c1915; } }
+  body { margin: 0; padding: 24px 16px 48px; }
+  .bp-again { margin-top: 16px; }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script type="module">
+  import { bootStandalone } from "./blindpanel/ui/app.js";
+  bootStandalone(document.getElementById("app"));
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "clauses": [
+    {
+      "clause": null,
+      "cue": "hand",
+      "event": "e01",
+      "law": null,
+      "t": 2.4,
+      "t_clip": 2.4
+    },
+    {
+      "clause": "At 3.60 s, when the glass is set down, it leans against the glass, then slowly softens and wilts as if damp.",
+      "cue": "water",
+      "event": "e02",
+      "law": "paper.water",
+      "t": 3.6,
+      "t_clip": 3.6
+    }
+  ],
+  "material": "paper",
+  "model": "kling_4",
+  "prompt_chars": 719,
+  "schema": "p47-trace/1",
+  "take": "t01"
+}

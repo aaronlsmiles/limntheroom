@@ -1,0 +1,127 @@
+{
+ "baseline": {
+  "t01-gold": {
+   "behaviour": "Looked at its reflection",
+   "law": "gold.water",
+   "target": "The glass of water"
+  },
+  "t01-ink": {
+   "behaviour": "Backed away from it",
+   "law": "ink.water",
+   "target": "The glass of water"
+  },
+  "t01-paper": {
+   "behaviour": "Wilted",
+   "law": "paper.water",
+   "target": "The glass of water"
+  },
+  "t02-ink": {
+   "behaviour": "Hid from it",
+   "law": "ink.light",
+   "target": "The torch's light"
+  },
+  "t03-ink": {
+   "behaviour": "Drank from it",
+   "law": "ink.pen",
+   "target": "The pen"
+  },
+  "t04-ink": {
+   "behaviour": "Shivered",
+   "law": "ink.breath",
+   "target": "A breath"
+  },
+  "t05-ink": {
+   "behaviour": "Did what it said",
+   "law": "ink.note",
+   "target": "The handwritten note"
+  },
+  "t06-ink": {
+   "behaviour": "Climbed onto it",
+   "law": "ink.hand",
+   "target": "The hand"
+  }
+ },
+ "clips": {
+  "t01-gold": {
+   "behaviour": "Looked at its reflection",
+   "law": "gold.water",
+   "target": "The glass of water"
+  },
+  "t01-ink": {
+   "behaviour": "Backed away from it",
+   "law": "ink.water",
+   "target": "The glass of water"
+  },
+  "t01-paper": {
+   "behaviour": "Wilted",
+   "law": "paper.water",
+   "target": "The glass of water"
+  },
+  "t02-ink": {
+   "behaviour": "Hid from it",
+   "law": "ink.light",
+   "target": "The torch's light"
+  },
+  "t03-ink": {
+   "behaviour": "Drank from it",
+   "law": "ink.pen",
+   "target": "The pen"
+  },
+  "t04-ink": {
+   "behaviour": "Shivered",
+   "law": "ink.breath",
+   "target": "A breath"
+  },
+  "t05-ink": {
+   "behaviour": "Did what it said",
+   "law": "ink.note",
+   "target": "The handwritten note"
+  },
+  "t06-ink": {
+   "behaviour": "Climbed onto it",
+   "law": "ink.hand",
+   "target": "The hand"
+  }
+ },
+ "codes": {
+  "clips": {
+   "t01-gold": "ctx0de",
+   "t01-ink": "cwtq3z",
+   "t01-paper": "cp5rsv",
+   "t02-ink": "cbt4cf",
+   "t03-ink": "c97e41",
+   "t04-ink": "ce3wzq",
+   "t05-ink": "cz9xsv",
+   "t06-ink": "cgrtw1"
+  },
+  "panels": {
+   "t01-gold": "py6gjx",
+   "t01-ink": "psea9n",
+   "t01-paper": "pg26km",
+   "t02-ink": "ph8cjx",
+   "t03-ink": "ptq1wv",
+   "t04-ink": "ph49ws",
+   "t05-ink": "pj3c05",
+   "t06-ink": "pxy94h"
+  }
+ },
+ "ids": {
+  "t01-gold": "iad4eaea483",
+  "t01-ink": "iabbe5f6e32",
+  "t01-paper": "if964d60617",
+  "t02-ink": "ifeccfe038b",
+  "t03-ink": "ied38225826",
+  "t04-ink": "i29a084790a",
+  "t05-ink": "i45872b9e35",
+  "t06-ink": "if63cfac09b"
+ },
+ "questions": {
+  "base_behaviour": "q2b",
+  "base_target": "q1b",
+  "clip_behaviour": "q2",
+  "clip_target": "q1"
+ },
+ "salt": "5a8950e613f85cb096c69564a5cdf5b0",
+ "schema": "p47-answer-key/1",
+ "seed": "sc8616a0c3132a0ff6967c125"
+}

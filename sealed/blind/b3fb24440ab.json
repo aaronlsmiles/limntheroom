@@ -1,0 +1,49 @@
+{
+ "agent": "/Users/aaron/projects/studio/prototypes/limntheroom/agents/blind-cue-rater.md",
+ "brief_sha256": "2c6663afd014d9526b32dd4a0e666d58449dc131319ff5820da8f00e5d08286b",
+ "code": "b3fb24440ab",
+ "codes": [
+  "qb099b7b8d",
+  "qfe005cab1",
+  "q39734ed13"
+ ],
+ "dispatch": "Your folder is /Users/aaron/.blind/b3fb24440ab. Read rater-brief.md in it first, then follow it exactly.",
+ "folder": "/Users/aaron/.blind/b3fb24440ab",
+ "id": "study-baseline",
+ "inventory": [
+  {
+   "name": "items.txt",
+   "sha256": "e0a86c452ba04ea6c37f6ac2e407fcebd8b6c103b0af55fea419c9357ba830a6"
+  },
+  {
+   "name": "q39734ed13.png",
+   "sha256": "f832f9963f3326cf0128afe6e79d06d098446ecf17f9a6d1c0b13c07871c19d6"
+  },
+  {
+   "name": "qb099b7b8d.png",
+   "sha256": "6523d0ff647f8d53a375fbaf64203dd278e0b7478eb070e851b6cf036a326b35"
+  },
+  {
+   "name": "qfe005cab1.png",
+   "sha256": "68cb1890629d2c76ed060aaec761afa1bcd61f02fe1d5df2ff3946195825c0de"
+  },
+  {
+   "name": "rater-brief.md",
+   "sha256": "2c6663afd014d9526b32dd4a0e666d58449dc131319ff5820da8f00e5d08286b"
+  }
+ ],
+ "kind": "rater-study-baseline",
+ "ledger": {
+  "path": "/Users/aaron/projects/studio/prototypes/limntheroom/agents/logs/rater/study-baseline.json",
+  "step": null
+ },
+ "order_seed": "5480313dfd33e5f8",
+ "refs": {
+  "q39734ed13": "t01-ink",
+  "qb099b7b8d": "t01-gold",
+  "qfe005cab1": "t01-paper"
+ },
+ "salt": "5b8ce584fe094ee0db036af2407a0911",
+ "schema": "p47-blind-folder/2",
+ "transcripts": "/Users/aaron/projects/studio/prototypes/limntheroom/sealed/blind/transcripts"
+}

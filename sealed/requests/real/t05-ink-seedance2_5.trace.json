@@ -1,0 +1,25 @@
+{
+  "clauses": [
+    {
+      "clause": null,
+      "cue": "hand",
+      "event": "e01",
+      "law": null,
+      "t": 2.267,
+      "t_clip": 2.267
+    },
+    {
+      "clause": "At 3.40 s, when a note reading \"JUMP\" is set down, it reads the note and does what it says: it jumps onto the note.",
+      "cue": "note",
+      "event": "e02",
+      "law": "ink.note",
+      "t": 3.4,
+      "t_clip": 3.4
+    }
+  ],
+  "material": "ink",
+  "model": "seedance2_5",
+  "prompt_chars": 726,
+  "schema": "p47-trace/1",
+  "take": "t05"
+}

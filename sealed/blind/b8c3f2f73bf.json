@@ -1,0 +1,45 @@
+{
+ "agent": "/Users/aaron/projects/studio/prototypes/limntheroom/agents/blind-cue-rater.md",
+ "brief_sha256": "039d763909ed01597951a442b9f401c1230bb0a607f1150565f684e930f9ea08",
+ "code": "b8c3f2f73bf",
+ "codes": [
+  "q1f604357d"
+ ],
+ "dispatch": "Your folder is /Users/aaron/.blind/b8c3f2f73bf. Read rater-brief.md in it first, then follow it exactly.",
+ "folder": "/Users/aaron/.blind/b8c3f2f73bf",
+ "id": "rescue",
+ "inventory": [
+  {
+   "name": "items.txt",
+   "sha256": "22259596849e99b2cf2c6af15459f33af54344a1a0ce8d7ebc15e674e170c990"
+  },
+  {
+   "name": "q1f604357d-1.png",
+   "sha256": "f2de2d598230d03d97929875e0364e421550a60372eb80b81e47c1b8e66cb0fb"
+  },
+  {
+   "name": "q1f604357d-2.png",
+   "sha256": "cd0530ba1548525f6ed404c70449f1367ac7f4629ec818c1c76062436bc39660"
+  },
+  {
+   "name": "q1f604357d-3.png",
+   "sha256": "57121184f320364d12d2dea20103a5da808ffcb4f7b917e9ebb0bc7d566da093"
+  },
+  {
+   "name": "rater-brief.md",
+   "sha256": "039d763909ed01597951a442b9f401c1230bb0a607f1150565f684e930f9ea08"
+  }
+ ],
+ "kind": "rater-probe-draft",
+ "ledger": {
+  "path": "/Users/aaron/projects/studio/prototypes/limntheroom/agents/logs/rater/rescue.json",
+  "step": null
+ },
+ "order_seed": "1e8e61f99f046d60",
+ "refs": {
+  "q1f604357d": "f603d06fa866ea59b76f56af15ce846250b886b7d4b4cd5c150a45ade06415cb"
+ },
+ "salt": "50dd996ad27a59360825b6f1a982f5ed",
+ "schema": "p47-blind-folder/2",
+ "transcripts": "/Users/aaron/projects/studio/prototypes/limntheroom/sealed/blind/transcripts"
+}

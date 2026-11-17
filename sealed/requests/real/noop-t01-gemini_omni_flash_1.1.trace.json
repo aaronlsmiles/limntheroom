@@ -1,0 +1,8 @@
+{
+  "clauses": [],
+  "material": null,
+  "model": "gemini_omni_flash_1.1",
+  "prompt_chars": 67,
+  "schema": "p47-trace/1",
+  "take": "t01"
+}

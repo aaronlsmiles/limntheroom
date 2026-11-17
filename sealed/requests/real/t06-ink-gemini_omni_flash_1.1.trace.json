@@ -1,0 +1,17 @@
+{
+  "clauses": [
+    {
+      "clause": "At 2.73 s, when a hand comes into view, it climbs onto the offered palm and sits down in it.",
+      "cue": "hand",
+      "event": "e01",
+      "law": "ink.hand",
+      "t": 2.733,
+      "t_clip": 2.733
+    }
+  ],
+  "material": "ink",
+  "model": "gemini_omni_flash_1.1",
+  "prompt_chars": 703,
+  "schema": "p47-trace/1",
+  "take": "t06"
+}

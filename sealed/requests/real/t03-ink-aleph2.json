@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "keyframes": [],
+    "references": [],
+    "video": "../../../takes/t03c.render.mp4"
+  },
+  "meta": {
+    "compiler": "p47-compile/1",
+    "cue": "pen",
+    "cues_sha256": "1246f1ac19ddfa866cb27eb2986948af39eeda338ede35195d6524b0c4a45a09",
+    "fires": [
+      "ink.pen"
+    ],
+    "laws_sha256": "00366e3ba293db2ef838812bbff97c0ed5a3e6f802a0b9ceb596697f1812a3e8",
+    "material": "ink",
+    "purpose": "final",
+    "seed_policy": "fixed",
+    "take": "t03"
+  },
+  "model": "aleph2",
+  "options": {},
+  "prompt": "Keep the camera, framing, timing, desk, page and every object and hand exactly as filmed. The drawing on the left of the page, the ink one, comes to life and steps up out of its place on the page. The ink drawing stays a flat black ink line drawing, never shaded or 3D. The gold drawing stays a flat drawing in gold paint, never shaded or 3D. The paper drawing stays a flat cut-paper figure, never shaded or 3D. The gold drawing in the centre of the page stays still on the page. The paper drawing on the right of the page stays still on the page. At 3.60 s, when the pen is set down, it walks to the uncapped nib and drinks from it, and its lines grow bolder.",
+  "schema": "p47-render/1",
+  "seed": 1
+}

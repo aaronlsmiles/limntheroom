@@ -1,0 +1,105 @@
+{
+ "banned_terms_sha256": "8cdaab1b02b9d31c3cf60b5e14df4882d7a313629278813ab3dd1f106d62766a",
+ "crf": 16,
+ "failure_path": true,
+ "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+ "fps": 24,
+ "frames": 288,
+ "instrument": "1",
+ "items": [
+  {
+   "clip_code": "cwtq3z",
+   "clip_sha256": "8397e44b229bed4ef7f1b2b4490da978dacab9d5efc279a1ddbe5603348d8821",
+   "cue_s": 3.6,
+   "law": "ink.water",
+   "panel_code": "psea9n",
+   "panel_sha256": "f832f9963f3326cf0128afe6e79d06d098446ecf17f9a6d1c0b13c07871c19d6",
+   "ref": "t01-ink",
+   "ring_bbox": [
+    0.3297,
+    0.3486,
+    0.4148,
+    0.4472
+   ]
+  },
+  {
+   "clip_code": "ctx0de",
+   "clip_sha256": "0845769284a16687d2ef95237a4ff3d724e69667a550e55cde9872841aba891c",
+   "cue_s": 3.6,
+   "law": "gold.water",
+   "panel_code": "py6gjx",
+   "panel_sha256": "6523d0ff647f8d53a375fbaf64203dd278e0b7478eb070e851b6cf036a326b35",
+   "ref": "t01-gold",
+   "ring_bbox": [
+    0.4742,
+    0.3514,
+    0.5563,
+    0.4458
+   ]
+  },
+  {
+   "clip_code": "cp5rsv",
+   "clip_sha256": "b870d79202fc40d7545f27f328b74ffc4f0fccacc327161d6db2878e9a58712c",
+   "cue_s": 3.6,
+   "law": "paper.water",
+   "panel_code": "pg26km",
+   "panel_sha256": "68cb1890629d2c76ed060aaec761afa1bcd61f02fe1d5df2ff3946195825c0de",
+   "ref": "t01-paper",
+   "ring_bbox": [
+    0.618,
+    0.35,
+    0.7023,
+    0.4444
+   ]
+  }
+ ],
+ "key_sha256": "a65f7f13e618f9892e60376cad9b5ffcc54de4914eea87189b1142801d9d5314",
+ "locks": {
+  "rs-r1": {
+   "instrument": "1",
+   "text_sha256": "b081b3ed22b9376d8d228ab0730fa3e297388b07eb8830d57641eb5ecb9ba9f3"
+  },
+  "rs-r2": {
+   "instrument": "1",
+   "text_sha256": "b081b3ed22b9376d8d228ab0730fa3e297388b07eb8830d57641eb5ecb9ba9f3"
+  },
+  "rs-r3": {
+   "instrument": "1",
+   "text_sha256": "b081b3ed22b9376d8d228ab0730fa3e297388b07eb8830d57641eb5ecb9ba9f3"
+  },
+  "rs-r4": {
+   "instrument": "1",
+   "text_sha256": "b081b3ed22b9376d8d228ab0730fa3e297388b07eb8830d57641eb5ecb9ba9f3"
+  },
+  "rs-r5": {
+   "instrument": "1",
+   "text_sha256": "b081b3ed22b9376d8d228ab0730fa3e297388b07eb8830d57641eb5ecb9ba9f3"
+  },
+  "rs-r6": {
+   "instrument": "1",
+   "text_sha256": "b081b3ed22b9376d8d228ab0730fa3e297388b07eb8830d57641eb5ecb9ba9f3"
+  },
+  "rs-r7": {
+   "instrument": "1",
+   "text_sha256": "b081b3ed22b9376d8d228ab0730fa3e297388b07eb8830d57641eb5ecb9ba9f3"
+  }
+ },
+ "q2_options": 12,
+ "q2_options_sha256": "48ddecc91efb61449a3cb8ca70533e393bf5a2d09a309068a57e38987c40494f",
+ "salt": "5a8950e613f85cb096c69564a5cdf5b0",
+ "schema": "p47-rating-manifest/1",
+ "seed": "sc8616a0c3132a0ff6967c125",
+ "size": [
+  1280,
+  720
+ ],
+ "studies": [
+  "rs-r1",
+  "rs-r2",
+  "rs-r3",
+  "rs-r4",
+  "rs-r5",
+  "rs-r6",
+  "rs-r7"
+ ]
+}

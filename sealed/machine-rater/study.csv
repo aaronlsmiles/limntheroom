@@ -1,0 +1,13 @@
+visitor,instrument,part,position,item,question,score,flags,option
+M,machine,baseline,1,t01-ink,q1b,,,The glass of water
+M,machine,baseline,1,t01-ink,q2b,,,Drank from it
+M,machine,baseline,2,t01-gold,q1b,,,The glass of water
+M,machine,baseline,2,t01-gold,q2b,,,Can't tell
+M,machine,baseline,3,t01-paper,q1b,,,The glass of water
+M,machine,baseline,3,t01-paper,q2b,,,Backed away from it
+M,machine,clips,1,t01-ink,q1,,,The glass of water
+M,machine,clips,1,t01-ink,q2,,,Drank from it
+M,machine,clips,2,t01-paper,q1,,,The glass of water
+M,machine,clips,2,t01-paper,q2,,,Can't tell
+M,machine,clips,3,t01-gold,q1,,,The glass of water
+M,machine,clips,3,t01-gold,q2,,,Can't tell

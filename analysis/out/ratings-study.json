@@ -1,0 +1,217 @@
+{
+ "kappa": {
+  "q1": -0.0714285714286,
+  "q1b": -0.153846153846,
+  "q2": 0.0833333333333,
+  "q2b": -0.139240506329
+ },
+ "laws": {
+  "gold.water": {
+   "baseline": {
+    "q1b": {
+     "ci": [
+      0.117620774233,
+      0.769275718724
+     ],
+     "k": 2,
+     "n": 5,
+     "rate": 0.4
+    },
+    "q2b": {
+     "ci": [
+      0.0,
+      0.434482464783
+     ],
+     "k": 0,
+     "n": 5,
+     "rate": 0.0
+    }
+   },
+   "clip": {
+    "law": {
+     "ci": [
+      0.0,
+      0.434482464783
+     ],
+     "k": 0,
+     "n": 5,
+     "rate": 0.0
+    },
+    "q1": {
+     "ci": [
+      0.565517535217,
+      1.0
+     ],
+     "k": 5,
+     "n": 5,
+     "rate": 1.0
+    },
+    "q2": {
+     "ci": [
+      0.0,
+      0.434482464783
+     ],
+     "k": 0,
+     "n": 5,
+     "rate": 0.0
+    }
+   },
+   "clip_minus_baseline": 0.0,
+   "q1_clip_minus_baseline": 0.6
+  },
+  "ink.water": {
+   "baseline": {
+    "q1b": {
+     "ci": [
+      0.0362241086324,
+      0.624465370237
+     ],
+     "k": 1,
+     "n": 5,
+     "rate": 0.2
+    },
+    "q2b": {
+     "ci": [
+      0.0,
+      0.434482464783
+     ],
+     "k": 0,
+     "n": 5,
+     "rate": 0.0
+    }
+   },
+   "clip": {
+    "law": {
+     "ci": [
+      0.117620774233,
+      0.769275718724
+     ],
+     "k": 2,
+     "n": 5,
+     "rate": 0.4
+    },
+    "q1": {
+     "ci": [
+      0.375534629763,
+      0.963775891368
+     ],
+     "k": 4,
+     "n": 5,
+     "rate": 0.8
+    },
+    "q2": {
+     "ci": [
+      0.117620774233,
+      0.769275718724
+     ],
+     "k": 2,
+     "n": 5,
+     "rate": 0.4
+    }
+   },
+   "clip_minus_baseline": 0.4,
+   "q1_clip_minus_baseline": 0.6
+  },
+  "paper.water": {
+   "baseline": {
+    "q1b": {
+     "ci": [
+      0.0362241086324,
+      0.624465370237
+     ],
+     "k": 1,
+     "n": 5,
+     "rate": 0.2
+    },
+    "q2b": {
+     "ci": [
+      0.0,
+      0.434482464783
+     ],
+     "k": 0,
+     "n": 5,
+     "rate": 0.0
+    }
+   },
+   "clip": {
+    "law": {
+     "ci": [
+      0.117620774233,
+      0.769275718724
+     ],
+     "k": 2,
+     "n": 5,
+     "rate": 0.4
+    },
+    "q1": {
+     "ci": [
+      0.565517535217,
+      1.0
+     ],
+     "k": 5,
+     "n": 5,
+     "rate": 1.0
+    },
+    "q2": {
+     "ci": [
+      0.117620774233,
+      0.769275718724
+     ],
+     "k": 2,
+     "n": 5,
+     "rate": 0.4
+    }
+   },
+   "clip_minus_baseline": 0.4,
+   "q1_clip_minus_baseline": 0.8
+  }
+ },
+ "n_raters": 5,
+ "not_in_study": [
+  "ink.breath",
+  "ink.hand",
+  "ink.light",
+  "ink.note",
+  "ink.pen"
+ ],
+ "raters": [
+  "rs-r2",
+  "rs-r4",
+  "rs-r5",
+  "rs-r6",
+  "rs-r7"
+ ],
+ "schema": "p47-ratings/1",
+ "sessions": {
+  "rs-r2": {
+   "n_sessions": 1,
+   "reason": "the only session",
+   "visitor": "V0001"
+  },
+  "rs-r4": {
+   "n_sessions": 1,
+   "reason": "the only session",
+   "visitor": "V0001"
+  },
+  "rs-r5": {
+   "n_sessions": 1,
+   "reason": "the only session",
+   "visitor": "V0001"
+  },
+  "rs-r6": {
+   "n_sessions": 1,
+   "reason": "the only session",
+   "visitor": "V0001"
+  },
+  "rs-r7": {
+   "n_sessions": 1,
+   "reason": "the only session",
+   "visitor": "V0001"
+  }
+ },
+ "study_items": [
+  "t01-gold",
+  "t01-ink",
+  "t01-paper"
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "agent_sha256": "20e9451f3018feb1486ea77b0d9b80093fcb0a381f0d566936ea235124b48b5b",
+ "brief_sha256": "48307f50980292fb40d498cb6ff3fb5994d70a339934bf65345eb4b061fd91c2",
+ "code": "bd10f132d42",
+ "kind": "rater-study-clips",
+ "output": {
+  "items": {
+   "q06a762eec": {
+    "q1": "The glass of water",
+    "q2": "Drank from it"
+   },
+   "q637eae344": {
+    "q1": "The glass of water",
+    "q2": "Can't tell"
+   },
+   "q69fcc6c3c": {
+    "q1": "The glass of water",
+    "q2": "Can't tell"
+   }
+  },
+  "notes": ""
+ },
+ "output_sha256": "2b181c1167b9aeca4afb66582473fb6de1ce2609419c5bae87415bb17555fe91",
+ "problems": [],
+ "q2_sha256": "48ddecc91efb61449a3cb8ca70533e393bf5a2d09a309068a57e38987c40494f",
+ "refs": {
+  "q06a762eec": "t01-ink",
+  "q637eae344": "t01-paper",
+  "q69fcc6c3c": "t01-gold"
+ },
+ "round": "study-clips",
+ "schema": "p47-machine-rater/1",
+ "valid": true
+}

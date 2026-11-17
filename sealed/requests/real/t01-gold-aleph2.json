@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "keyframes": [],
+    "references": [],
+    "video": "../../../takes/t01f.render.mp4"
+  },
+  "meta": {
+    "compiler": "p47-compile/1",
+    "cue": "water",
+    "cues_sha256": "1a928d0a72a3e6e1a452dd24da52aa47755864ecb01ee6bd4ae1ae560bb283a8",
+    "fires": [
+      "gold.water"
+    ],
+    "laws_sha256": "00366e3ba293db2ef838812bbff97c0ed5a3e6f802a0b9ceb596697f1812a3e8",
+    "material": "gold",
+    "purpose": "final",
+    "seed_policy": "fixed",
+    "take": "t01"
+  },
+  "model": "aleph2",
+  "options": {},
+  "prompt": "Keep the camera, framing, timing, desk, page and every object and hand exactly as filmed. The drawing in the centre of the page, the gold one, comes to life and steps up out of its place on the page. The ink drawing stays a flat black ink line drawing, never shaded or 3D. The gold drawing stays a flat drawing in gold paint, never shaded or 3D. The paper drawing stays a flat cut-paper figure, never shaded or 3D. The ink drawing on the left of the page stays still on the page. The paper drawing on the right of the page stays still on the page. At 3.60 s, when the glass is set down, it walks up to the glass, rests its front feet against it and admires its own reflection in it.",
+  "schema": "p47-render/1",
+  "seed": 1
+}

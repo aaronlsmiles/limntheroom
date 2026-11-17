@@ -1,0 +1,65 @@
+{
+ "agent": "/Users/aaron/projects/studio/prototypes/limntheroom/agents/blind-cue-rater.md",
+ "brief_sha256": "039d763909ed01597951a442b9f401c1230bb0a607f1150565f684e930f9ea08",
+ "code": "bbe7198adb2",
+ "codes": [
+  "q7df42a4d1",
+  "q75e49c8b5",
+  "qe28dea928"
+ ],
+ "dispatch": "Your folder is /Users/aaron/.blind/bbe7198adb2. Read rater-brief.md in it first, then follow it exactly.",
+ "folder": "/Users/aaron/.blind/bbe7198adb2",
+ "id": "probe",
+ "inventory": [
+  {
+   "name": "items.txt",
+   "sha256": "98d0c93cb8116dea3e87e190bae1d36060eb17245430e108de8fab05b9b9ded3"
+  },
+  {
+   "name": "q75e49c8b5-1.png",
+   "sha256": "8c05659eafe71ee890d618302186003c8bf667d590b5a9f9a7d9a08251880062"
+  },
+  {
+   "name": "q75e49c8b5-2.png",
+   "sha256": "e2138167f3f3ac582b8d45e65fbca4de58ee6aadb2d4322ff9f995c955a7912f"
+  },
+  {
+   "name": "q75e49c8b5-3.png",
+   "sha256": "ab204ff9f9a6dcce7dc580dbded4c98c6a5d027870790f941ae1586d5f74d314"
+  },
+  {
+   "name": "q7df42a4d1-1.png",
+   "sha256": "3f49842c3766b368f9f585528353ea0b1e104cde55eacb9a71761e0fd2f35e6b"
+  },
+  {
+   "name": "q7df42a4d1-2.png",
+   "sha256": "7a57d65591a415778d99da4b19a28d59019556cf120bd1edc65167889c7f54dc"
+  },
+  {
+   "name": "q7df42a4d1-3.png",
+   "sha256": "81e27b2742b28c71280e3246a654ff73e70a54bf073b4ac2dacc8785dff9b0b6"
+  },
+  {
+   "name": "qe28dea928-1.png",
+   "sha256": "7d3c24df905bb32499f167cdb1e160e330020d7bba65869555a6410d352264a2"
+  },
+  {
+   "name": "rater-brief.md",
+   "sha256": "039d763909ed01597951a442b9f401c1230bb0a607f1150565f684e930f9ea08"
+  }
+ ],
+ "kind": "rater-probe-draft",
+ "ledger": {
+  "path": "/Users/aaron/projects/studio/prototypes/limntheroom/agents/logs/rater/probe.json",
+  "step": null
+ },
+ "order_seed": "c4293b1fdd0d5d7a",
+ "refs": {
+  "q75e49c8b5": "1f1f2021906d99e4fd7ff8a11c589493be305eb729b990badae5107d387f62ed",
+  "q7df42a4d1": "1f1fc9ae07de1e93461a3a18af933331149b477392e96fda482117a7c233c451",
+  "qe28dea928": "6497a03b1f11e6c1dff4d074c43a1682beaa656b09d329c4e2f115a5ccdce449"
+ },
+ "salt": "a3f577d0acba7cd1f53b9fb542d77208",
+ "schema": "p47-blind-folder/2",
+ "transcripts": "/Users/aaron/projects/studio/prototypes/limntheroom/sealed/blind/transcripts"
+}

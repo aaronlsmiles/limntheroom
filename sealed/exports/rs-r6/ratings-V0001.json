@@ -1,0 +1,39 @@
+{
+ "rater": "V0001",
+ "instrument": "1",
+ "ratings": [
+  {
+   "clip": "t01-paper",
+   "q1": 1,
+   "q2": 6
+  },
+  {
+   "clip": "t01-gold",
+   "q1": 1,
+   "q2": 8
+  },
+  {
+   "clip": "t01-ink",
+   "q1": 1,
+   "q2": 12
+  }
+ ],
+ "baseline": [
+  {
+   "panel": "t01-gold",
+   "q1b": 1,
+   "q2b": 8
+  },
+  {
+   "panel": "t01-ink",
+   "q1b": 5,
+   "q2b": 7
+  },
+  {
+   "panel": "t01-paper",
+   "q1b": 2,
+   "q2b": 10
+  }
+ ],
+ "flags": []
+}

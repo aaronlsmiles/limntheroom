@@ -1,0 +1,17 @@
+{
+  "clauses": [
+    {
+      "clause": "At 3.56 s, when someone breathes out across the page, it braces itself, and its lines shiver like wet ink in the wind, then settle.",
+      "cue": "breath",
+      "event": "e01",
+      "law": "ink.breath",
+      "t": 3.557,
+      "t_clip": 3.557
+    }
+  ],
+  "material": "ink",
+  "model": "seedance2_5",
+  "prompt_chars": 742,
+  "schema": "p47-trace/1",
+  "take": "t04"
+}

@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "keyframes": [],
+    "references": [
+      {
+        "path": "../../../creature/scan/paper.png"
+      }
+    ],
+    "video": "t01f.render.311d50062fc8.720p.mp4"
+  },
+  "meta": {
+    "compiler": "p47-compile/1",
+    "cue": "water",
+    "cues_sha256": "533bfc6b37dcdb1f96f73bc38db135ba587d740f3419d2538291eb7e2a0a1ad8",
+    "fires": [
+      "paper.water"
+    ],
+    "laws_sha256": "00366e3ba293db2ef838812bbff97c0ed5a3e6f802a0b9ceb596697f1812a3e8",
+    "material": "paper",
+    "purpose": "final",
+    "scale": {
+      "height": 720,
+      "source": "t01f.render.mp4",
+      "source_sha256": "311d50062fc8a02fa25980713df2469cda4d9dfb770fa0bf0f0f024c6893068d",
+      "width": 1280
+    },
+    "seed_policy": "fixed",
+    "take": "t01"
+  },
+  "model": "seedance2_5",
+  "options": {
+    "audio": false,
+    "mode": "edit"
+  },
+  "prompt": "Keep the camera, framing, timing, desk, page and every object and hand exactly as filmed. The drawing on the right of the page, the paper one, comes to life and steps up out of its place on the page. The ink drawing stays a flat black ink line drawing, never shaded or 3D. The gold drawing stays a flat drawing in gold paint, never shaded or 3D. The paper drawing stays a flat cut-paper figure, never shaded or 3D. The ink drawing on the left of the page stays still on the page. The gold drawing in the centre of the page stays still on the page. At 3.60 s, when the glass is set down, it leans against the glass, then slowly softens and wilts as if damp. It keeps the exact look of the drawing in the reference image.",
+  "schema": "p47-render/1",
+  "seed": 1
+}

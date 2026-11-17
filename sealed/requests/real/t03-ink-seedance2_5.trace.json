@@ -1,0 +1,25 @@
+{
+  "clauses": [
+    {
+      "clause": null,
+      "cue": "hand",
+      "event": "e01",
+      "law": null,
+      "t": 2.8,
+      "t_clip": 2.8
+    },
+    {
+      "clause": "At 3.60 s, when the pen is set down, it walks to the uncapped nib and drinks from it, and its lines grow bolder.",
+      "cue": "pen",
+      "event": "e02",
+      "law": "ink.pen",
+      "t": 3.6,
+      "t_clip": 3.6
+    }
+  ],
+  "material": "ink",
+  "model": "seedance2_5",
+  "prompt_chars": 723,
+  "schema": "p47-trace/1",
+  "take": "t03"
+}

@@ -1,0 +1,34 @@
+{
+ "agent_sha256": "20e9451f3018feb1486ea77b0d9b80093fcb0a381f0d566936ea235124b48b5b",
+ "brief_sha256": "2c6663afd014d9526b32dd4a0e666d58449dc131319ff5820da8f00e5d08286b",
+ "code": "b3fb24440ab",
+ "kind": "rater-study-baseline",
+ "output": {
+  "items": {
+   "q39734ed13": {
+    "q1b": "The glass of water",
+    "q2b": "Drank from it"
+   },
+   "qb099b7b8d": {
+    "q1b": "The glass of water",
+    "q2b": "Can't tell"
+   },
+   "qfe005cab1": {
+    "q1b": "The glass of water",
+    "q2b": "Backed away from it"
+   }
+  },
+  "notes": ""
+ },
+ "output_sha256": "80e40835f45770546d96119fd59d0f35f4757d019f4e0512a1592ae4c02d1f1c",
+ "problems": [],
+ "q2_sha256": "48ddecc91efb61449a3cb8ca70533e393bf5a2d09a309068a57e38987c40494f",
+ "refs": {
+  "q39734ed13": "t01-ink",
+  "qb099b7b8d": "t01-gold",
+  "qfe005cab1": "t01-paper"
+ },
+ "round": "study-baseline",
+ "schema": "p47-machine-rater/1",
+ "valid": true
+}

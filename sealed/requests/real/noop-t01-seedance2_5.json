@@ -1,0 +1,35 @@
+{
+  "inputs": {
+    "keyframes": [],
+    "references": [],
+    "video": "t01f.render.311d50062fc8.first10s.720p.mp4"
+  },
+  "meta": {
+    "compiler": "p47-compile/1",
+    "fires": [],
+    "material": null,
+    "purpose": "noop",
+    "scale": {
+      "height": 720,
+      "source": "t01f.render.mp4",
+      "source_sha256": "311d50062fc8a02fa25980713df2469cda4d9dfb770fa0bf0f0f024c6893068d",
+      "width": 1280
+    },
+    "seed_policy": "fixed",
+    "take": "t01",
+    "trim": {
+      "seconds": 10.0,
+      "source": "t01f.render.mp4",
+      "source_sha256": "311d50062fc8a02fa25980713df2469cda4d9dfb770fa0bf0f0f024c6893068d",
+      "start_s": 0.0
+    }
+  },
+  "model": "seedance2_5",
+  "options": {
+    "audio": false,
+    "mode": "edit"
+  },
+  "prompt": "Change nothing. Keep every object, hand and line exactly as filmed.",
+  "schema": "p47-render/1",
+  "seed": 1
+}

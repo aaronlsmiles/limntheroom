@@ -1,0 +1,100 @@
+{
+  "decoys": [
+    "Turned towards it",
+    "Was blown along"
+  ],
+  "laws": [
+    {
+      "behaviour": "Dips a toe at the glass's foot, recoils, backs away and keeps its distance (wet ink runs)",
+      "clause": "walks to the foot of the glass, dips one toe at its edge, recoils as its wet ink starts to run, then backs away and keeps its distance",
+      "cue": "water",
+      "id": "ink.water",
+      "label": "Backed away from it",
+      "material": "ink",
+      "rated": true,
+      "touches": "glass"
+    },
+    {
+      "behaviour": "Walks up to the glass, rests its front feet against it, admires its reflection",
+      "clause": "walks up to the glass, rests its front feet against it and admires its own reflection in it",
+      "cue": "water",
+      "id": "gold.water",
+      "label": "Looked at its reflection",
+      "material": "gold",
+      "rated": true,
+      "touches": "glass"
+    },
+    {
+      "behaviour": "Leans against the glass, then softens and wilts as if damp",
+      "clause": "leans against the glass, then slowly softens and wilts as if damp",
+      "cue": "water",
+      "id": "paper.water",
+      "label": "Wilted",
+      "material": "paper",
+      "rated": true,
+      "touches": "glass"
+    },
+    {
+      "behaviour": "When the beam lands on it, ducks behind a small book standing on the desk",
+      "clause": "ducks behind the object standing upright on the desk beside it and hides there",
+      "cue": "light",
+      "id": "ink.light",
+      "label": "Hid from it",
+      "material": "ink",
+      "rated": true,
+      "touches": "hiding object"
+    },
+    {
+      "behaviour": "Walks to the uncapped nib and drinks; its lines grow bolder",
+      "clause": "walks to the uncapped nib and drinks from it, and its lines grow bolder",
+      "cue": "pen",
+      "id": "ink.pen",
+      "label": "Drank from it",
+      "material": "ink",
+      "rated": true,
+      "touches": "pen"
+    },
+    {
+      "behaviour": "Braces; its lines shiver like wet ink in wind, then settle",
+      "clause": "braces itself, and its lines shiver like wet ink in the wind, then settle",
+      "cue": "breath",
+      "id": "ink.breath",
+      "label": "Shivered",
+      "material": "ink",
+      "rated": true,
+      "touches": null
+    },
+    {
+      "behaviour": "Reads the note and does what it says: jumps onto the note",
+      "clause": "reads the note and does what it says: it jumps onto the note",
+      "cue": "note",
+      "id": "ink.note",
+      "label": "Did what it said",
+      "material": "ink",
+      "rated": true,
+      "touches": "note"
+    },
+    {
+      "behaviour": "Climbs onto the offered palm and sits",
+      "clause": "climbs onto the offered palm and sits down in it",
+      "cue": "hand",
+      "id": "ink.hand",
+      "label": "Climbed onto it",
+      "material": "ink",
+      "rated": true,
+      "touches": "hand"
+    }
+  ],
+  "materials": {
+    "gold": {
+      "look": "a flat drawing in gold paint, never shaded or 3D"
+    },
+    "ink": {
+      "look": "a flat black ink line drawing, never shaded or 3D"
+    },
+    "paper": {
+      "look": "a flat cut-paper figure, never shaded or 3D"
+    }
+  },
+  "salt": "2a7fd6898437b864809cd9b8fa78bdeb"
+}

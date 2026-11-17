@@ -1,0 +1,25 @@
+{
+  "clauses": [
+    {
+      "clause": null,
+      "cue": "hand",
+      "event": "e01",
+      "law": null,
+      "t": 2.4,
+      "t_clip": 2.4
+    },
+    {
+      "clause": "At 3.60 s, when the glass is set down, it walks up to the glass, rests its front feet against it and admires its own reflection in it.",
+      "cue": "water",
+      "event": "e02",
+      "law": "gold.water",
+      "t": 3.6,
+      "t_clip": 3.6
+    }
+  ],
+  "material": "gold",
+  "model": "gemini_omni_flash_1.1",
+  "prompt_chars": 745,
+  "schema": "p47-trace/1",
+  "take": "t01"
+}

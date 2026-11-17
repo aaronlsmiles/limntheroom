@@ -1,0 +1,30 @@
+{
+  "inputs": {
+    "keyframes": [],
+    "references": [
+      {
+        "path": "../../../creature/scan/ink.png"
+      }
+    ],
+    "video": "../../../takes/t02e.render.mp4"
+  },
+  "meta": {
+    "compiler": "p47-compile/1",
+    "cue": "light",
+    "cues_sha256": "c580e45416a6be13a43da6a865e301e9f2b9eb2a96fafd928c83a744540aa10f",
+    "fires": [
+      "ink.light"
+    ],
+    "laws_sha256": "00366e3ba293db2ef838812bbff97c0ed5a3e6f802a0b9ceb596697f1812a3e8",
+    "material": "ink",
+    "purpose": "final",
+    "seed_policy": "first output",
+    "take": "t02"
+  },
+  "model": "kling_4",
+  "options": {
+    "ratio": "auto_720p"
+  },
+  "prompt": "Keep the camera, framing, timing, desk, page and every object and hand exactly as filmed. The drawing on the left of the page, the ink one, comes to life and steps up out of its place on the page. The ink drawing stays a flat black ink line drawing, never shaded or 3D. The gold drawing stays a flat drawing in gold paint, never shaded or 3D. The paper drawing stays a flat cut-paper figure, never shaded or 3D. The gold drawing in the centre of the page stays still on the page. The paper drawing on the right of the page stays still on the page. At 2.67 s, when the torch's beam lands on the ink drawing, it ducks behind the object standing upright on the desk beside it and hides there. It keeps the exact look of the drawing in the reference image.",
+  "schema": "p47-render/1"
+}

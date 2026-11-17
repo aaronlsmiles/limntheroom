@@ -1,0 +1,13 @@
+visitor,instrument,part,position,item,question,score,flags,option
+V0001,1,clips,1,t01-gold,q1,1,,The glass of water
+V0001,1,clips,1,t01-gold,q2,8,,Climbed onto it
+V0001,1,clips,2,t01-ink,q1,2,,The torch's light
+V0001,1,clips,2,t01-ink,q2,8,,Climbed onto it
+V0001,1,clips,3,t01-paper,q1,1,,The glass of water
+V0001,1,clips,3,t01-paper,q2,6,,Drank from it
+V0001,1,baseline,1,t01-paper,q1b,8,,Can't tell
+V0001,1,baseline,1,t01-paper,q2b,10,,Turned towards it
+V0001,1,baseline,2,t01-ink,q1b,6,,The hand
+V0001,1,baseline,2,t01-ink,q2b,8,,Climbed onto it
+V0001,1,baseline,3,t01-gold,q1b,8,,Can't tell
+V0001,1,baseline,3,t01-gold,q2b,10,,Turned towards it

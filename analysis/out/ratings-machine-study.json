@@ -1,0 +1,193 @@
+{
+ "kappa": {
+  "q1": null,
+  "q1b": null,
+  "q2": null,
+  "q2b": null
+ },
+ "laws": {
+  "gold.water": {
+   "baseline": {
+    "q1b": {
+     "ci": [
+      0.206549314377,
+      1.0
+     ],
+     "k": 1,
+     "n": 1,
+     "rate": 1.0
+    },
+    "q2b": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "clip": {
+    "law": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    },
+    "q1": {
+     "ci": [
+      0.206549314377,
+      1.0
+     ],
+     "k": 1,
+     "n": 1,
+     "rate": 1.0
+    },
+    "q2": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "clip_minus_baseline": 0.0,
+   "q1_clip_minus_baseline": 0.0
+  },
+  "ink.water": {
+   "baseline": {
+    "q1b": {
+     "ci": [
+      0.206549314377,
+      1.0
+     ],
+     "k": 1,
+     "n": 1,
+     "rate": 1.0
+    },
+    "q2b": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "clip": {
+    "law": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    },
+    "q1": {
+     "ci": [
+      0.206549314377,
+      1.0
+     ],
+     "k": 1,
+     "n": 1,
+     "rate": 1.0
+    },
+    "q2": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "clip_minus_baseline": 0.0,
+   "q1_clip_minus_baseline": 0.0
+  },
+  "paper.water": {
+   "baseline": {
+    "q1b": {
+     "ci": [
+      0.206549314377,
+      1.0
+     ],
+     "k": 1,
+     "n": 1,
+     "rate": 1.0
+    },
+    "q2b": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "clip": {
+    "law": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    },
+    "q1": {
+     "ci": [
+      0.206549314377,
+      1.0
+     ],
+     "k": 1,
+     "n": 1,
+     "rate": 1.0
+    },
+    "q2": {
+     "ci": [
+      0.0,
+      0.793450685623
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "clip_minus_baseline": 0.0,
+   "q1_clip_minus_baseline": 0.0
+  }
+ },
+ "n_raters": 1,
+ "not_in_study": [
+  "ink.breath",
+  "ink.hand",
+  "ink.light",
+  "ink.note",
+  "ink.pen"
+ ],
+ "raters": [
+  "machine"
+ ],
+ "schema": "p47-ratings/1",
+ "sessions": {
+  "machine": {
+   "n_sessions": 1,
+   "reason": "the only session",
+   "visitor": "M"
+  }
+ },
+ "study_items": [
+  "t01-gold",
+  "t01-ink",
+  "t01-paper"
+ ]
+}

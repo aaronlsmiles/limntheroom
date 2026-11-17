@@ -1,0 +1,37 @@
+{
+ "agent_sha256": "20e9451f3018feb1486ea77b0d9b80093fcb0a381f0d566936ea235124b48b5b",
+ "brief_sha256": "039d763909ed01597951a442b9f401c1230bb0a607f1150565f684e930f9ea08",
+ "code": "bbe7198adb2",
+ "kind": "rater-probe-draft",
+ "output": {
+  "items": {
+   "q75e49c8b5": {
+    "did": "Drank from it",
+    "leaves_place": "Yes",
+    "reacted_to": "The glass of water"
+   },
+   "q7df42a4d1": {
+    "did": "Can't tell",
+    "leaves_place": "No",
+    "reacted_to": "Can't tell"
+   },
+   "qe28dea928": {
+    "did": "Can't tell",
+    "leaves_place": "Can't tell",
+    "reacted_to": "Can't tell"
+   }
+  },
+  "notes": ""
+ },
+ "output_sha256": "0081e15a707c4889fcd52fc340d3cd3c123f152edeefb877bdac4e21b5170c7f",
+ "problems": [],
+ "q2_sha256": "48ddecc91efb61449a3cb8ca70533e393bf5a2d09a309068a57e38987c40494f",
+ "refs": {
+  "q75e49c8b5": "1f1f2021906d99e4fd7ff8a11c589493be305eb729b990badae5107d387f62ed",
+  "q7df42a4d1": "1f1fc9ae07de1e93461a3a18af933331149b477392e96fda482117a7c233c451",
+  "qe28dea928": "6497a03b1f11e6c1dff4d074c43a1682beaa656b09d329c4e2f115a5ccdce449"
+ },
+ "round": "probe",
+ "schema": "p47-machine-rater/1",
+ "valid": true
+}

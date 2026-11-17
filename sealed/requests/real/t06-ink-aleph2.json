@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "keyframes": [],
+    "references": [],
+    "video": "../../../takes/t06c.render.mp4"
+  },
+  "meta": {
+    "compiler": "p47-compile/1",
+    "cue": "hand",
+    "cues_sha256": "7e8333da42c5b4880b747c5b5c5f2f06a6d9802be01825a84dd57b82631c3c0c",
+    "fires": [
+      "ink.hand"
+    ],
+    "laws_sha256": "00366e3ba293db2ef838812bbff97c0ed5a3e6f802a0b9ceb596697f1812a3e8",
+    "material": "ink",
+    "purpose": "final",
+    "seed_policy": "fixed",
+    "take": "t06"
+  },
+  "model": "aleph2",
+  "options": {},
+  "prompt": "Keep the camera, framing, timing, desk, page and every object and hand exactly as filmed. The drawing on the left of the page, the ink one, comes to life and steps up out of its place on the page. The ink drawing stays a flat black ink line drawing, never shaded or 3D. The gold drawing stays a flat drawing in gold paint, never shaded or 3D. The paper drawing stays a flat cut-paper figure, never shaded or 3D. The gold drawing in the centre of the page stays still on the page. The paper drawing on the right of the page stays still on the page. At 2.73 s, when a hand comes into view, it climbs onto the offered palm and sits down in it.",
+  "schema": "p47-render/1",
+  "seed": 1
+}
