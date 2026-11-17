@@ -24,6 +24,8 @@ If a model can bring a hand-made drawing to life on its page and make it answer 
 
 Registered on 10 Nov 2026, before any generation (`PREREGISTRATION.md`, `MANIFEST.sha256`, the tag `registered`, and `REGISTRATION.md`).
 
+The rating window closed on 17 Nov 2026 and the sealed files are published (§18, addendum A4); the results are in `analysis/out/` and `LOG.md`, and the write-up follows. The full private history is a git bundle on the release `close` (its head and hash in `REGISTRATION.md`).
+
 ## Prior art
 
 Simulon's Reality-Aware Rendering (iPhone, announced 28 October 2026) is the nearest work. It is credited here as prior art; nothing is copied from it.
@@ -34,5 +36,9 @@ Simulon's Reality-Aware Rendering (iPhone, announced 28 October 2026) is the nea
 SAM2_BUILD_CUDA=0 uv sync
 uv run pytest
 ```
+
+Two kinds of test fail on purpose after close, and neither touches a result:
+- the leak guard (`tests/test_sealed_leaks.py`) checked, until the window closed, that no published file held sealed text. The sealed files are now published, so its two `contains_sealed_text` tests fail on every clone. Skip them with `uv run pytest -k "not contains_sealed_text"`.
+- the two hub checks in `tests/test_vendor.py` compare the vendored Runway client with the studio's own copy, which moved on on 12 Nov 2026, after this study's last Runway call (10 Nov). They skip on a public clone, where the studio's copy is absent.
 
 SAM 2.1 small runs on CPU. Fetch the checkpoint first, as described in `models/MODELS.md`.
