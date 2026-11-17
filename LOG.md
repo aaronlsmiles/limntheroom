@@ -2,6 +2,26 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 17 Nov 2026: the close: exports, deviation D4 and the machine rater (hub calls 157–158)
+
+- **Close step 3, the exports.** The kit's `export` (the blindpanel `v0.2.0` CLI whose hash A2 records), with its Supabase store, one export per study, into the gitignored `sealed/exports/`; and the raw rows ordered by id. The counts agree three ways (the database's own count per study, the raw rows, the exports): one session each for `rs-r1` (the author's test, not analysed), `rs-r2`, `rs-r4`, `rs-r5`, `rs-r6` and `rs-r7`, none for `rs-r3`, no flags. The raw rows hold no detail that identifies a rater.
+  - The full manifest check passed first (431 rows), then the 14 export files were hashed into `MANIFEST.sha256` on arrival (§21 step 8; 445 rows, all OK).
+  - No answer was read. One slip: a text search printed one of the twelve Q2 option labels in the controller's session (a word inside it matched), with no item, answer or key entry beside it. Disclosed in D4 and in the write-up.
+- **Deviation D4 (Aaron, call 158).** The registered rater code refused the machine rater's second part: its guard against a second round over the same items also caught the study's own baseline-then-clips pair, which rate the same items by design. The guard now skips that one pair and nothing else. Built test-first (the new test failed before the fix), entered in §24, manifest addendum D4, pushed publicly before either round.
+- **The order of the close follows §21 (Aaron, call 158):** the machine rater and addendum A3, then the sealed files committed to the private repository, the manifest check, and `analysis/ratings.py`. The public push of the sealed files and the private history's bundle wait for Aaron's go.
+- New tool, `tools/machine_rater.py` (two tests): prepares the two study rounds from the sealed rating manifest (the panels and rating copies every rater saw; the clips' contact sheets at two frames a second), and writes the valid rounds' answers in the export's columns so `analysis/ratings.py` scores the machine rater as it scores a person, reported apart.
+
+## 15 Nov 2026: the rating window is open (hub call 148)
+
+- **The invitations went out on 12 Nov**, so the window (§17) closes at the end of 19 Nov. A session started later is kept, reported and not analysed.
+- **Declarations before rating:** R6 and R2 so far; both have seen nothing from the project. Their replies are kept with their timestamps.
+- **Later on 15 Nov (hub call 149):** R4 and R7 declared before rating and have seen nothing; their sessions arrived the same day. Three rater sessions so far (`rs-r6`, `rs-r4`, `rs-r7`); R2 has declared but not rated; R5 has done neither.
+- **16 Nov (hub calls 151–152):** R5 declared before rating and rated the same day. Four rater sessions so far (`rs-r6`, `rs-r4`, `rs-r7`, `rs-r5`), above the registered minimum of three; R2 has declared and not yet rated.
+- **16 Nov evening (hub call 154):** R2 rated (a 170 s session, unflagged). All five raters are in, each declared first; the window still closes at the end of 19 Nov.
+- **17 Nov (hub call 155): the window closed early, at 11:21 UTC.** All five recruited raters (the registered maximum) had completed a session, and no answer had been read, so the close cannot depend on the data. It is reported as a departure from §17's 7 days. The study address was taken offline (both aliases removed). Future registrations word the window as "7 days from the first invitation, or until every invited rater has completed a session, whichever comes first".
+- **17 Nov (hub call 156): declarations matched.** Aaron checked all five declarations against the session start times: each came first, so all five sessions are analysed. The replies stay private, since the raters stay anonymous.
+- **Sessions at first check:** one rater session (`rs-r6`, 12 Nov), plus the author's own test session (`rs-r1`), which is not analysed. Only counts and arrival days were looked at; no answer is read before the window closes.
+
 ## 12 Nov 2026: the raters' links, and the author's own session (hub call 146)
 
 - **Aaron took the study himself as `rs-r1`** (one session, 12 Nov). He knows the laws and the shoot, and sent no declaration, so §17 excludes it: it stays in the database, is reported as the author's test session and is not analysed. `rs-r1` is given to no one else.

@@ -814,6 +814,9 @@ RATER_KINDS = ("probe-draft", "study-baseline", "study-clips")
 # answered by the blind rater, and the registered set had no round for it once the probe round had closed.
 ROUNDS = {"probe": "probe-draft", "rescue": "probe-draft", "draft-1": "probe-draft", "draft-2": "probe-draft",
           "study-baseline": "study-baseline", "study-clips": "study-clips"}
+# Deviation D4 (PREREGISTRATION §24): the study's two parts rate the same items by design (§17), so the same-items
+# guard skips this one pair; every other round over the same refs is still refused.
+STUDY_PAIR = frozenset({"study-baseline", "study-clips"})
 
 
 def rater_fields(kind: str, q2: list[str]) -> dict:
@@ -856,7 +859,9 @@ def build_rater_folder(items, *, round_id: str, brief, root=None) -> dict:
     refs_in = sorted(str(it.get("ref")) for it in items)
     refs_sha = sha256_json(refs_in)
     for other in sorted((Path(LOGS) / "rater").glob("*.json")):
-        if other != lp and json.loads(other.read_text(encoding="utf-8")).get("refs_sha256") == refs_sha:
+        if other == lp or {round_id, other.stem} == STUDY_PAIR:
+            continue
+        if json.loads(other.read_text(encoding="utf-8")).get("refs_sha256") == refs_sha:
             raise BlindError(f"round {round_id}: another round already rates exactly these items")
     log = json.loads(lp.read_text(encoding="utf-8")) if lp.exists() else {
         "schema": "p47-rater-ledger/2", "round": round_id, "kind": kind, "brief_sha256": sha256_path(brief),

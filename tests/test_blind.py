@@ -258,3 +258,32 @@ def test_the_rescue_has_its_own_round_with_the_probe_brief(tmp_path):
     st = probe_folder(tmp_path, round_id="rescue", refs=("rescue-render",))
     assert st["kind"] == "rater-probe-draft" and len(st["codes"]) == 1
     assert ledger("rescue")["kind"] == "probe-draft"
+
+
+# --- deviation D4 (§24): the study's two parts rate the same items ---------------------------------------------------------
+def study_items(tmp_path, with_sheets):
+    panels = {}
+    for k, r in enumerate(("t01-ink", "t01-gold", "t01-paper")):
+        p = tmp_path / f"panel-{k}.png"
+        p.write_bytes(blind.png_bytes(IMG + k))
+        panels[r] = p
+    man = Path(blind.SEALED) / "rating-manifest.json"
+    man.parent.mkdir(parents=True, exist_ok=True)
+    man.write_text(json.dumps({"items": [{"ref": r, "panel_sha256": blind.sha256_path(p)} for r, p in panels.items()]}))
+    return [{"ref": r, "panel": p, **({"sheets": [IMG]} if with_sheets else {})} for r, p in panels.items()]
+
+
+def test_the_study_clips_round_rates_the_baseline_rounds_items(tmp_path):
+    base = blind.build_rater_folder(study_items(tmp_path, False), round_id="study-baseline", brief=brief(tmp_path))
+    clips = blind.build_rater_folder(study_items(tmp_path, True), round_id="study-clips", brief=brief(tmp_path))
+    assert base["kind"] == "rater-study-baseline" and clips["kind"] == "rater-study-clips"
+    assert ledger("study-baseline")["refs_sha256"] == ledger("study-clips")["refs_sha256"]
+    assert set(base["codes"]).isdisjoint(clips["codes"])
+
+
+def test_only_the_study_pair_shares_items(tmp_path):
+    blind.build_rater_folder(study_items(tmp_path, False), round_id="study-baseline", brief=brief(tmp_path))
+    with pytest.raises(blind.BlindError, match="another round"):
+        probe_folder(tmp_path, round_id="draft-2", refs=("t01-ink", "t01-gold", "t01-paper"))
+    with pytest.raises(blind.BlindError, match="unrecorded"):
+        blind.build_rater_folder(study_items(tmp_path, False), round_id="study-baseline", brief=brief(tmp_path))
