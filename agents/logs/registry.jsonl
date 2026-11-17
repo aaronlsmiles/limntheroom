@@ -16,3 +16,5 @@
 {"code": "bcb95645e6e", "id": "t07e", "kind": "take-place", "utc": "2026-11-09T19:14:15+00:00"}
 {"code": "bbe7198adb2", "id": "probe", "kind": "rater-probe-draft", "utc": "2026-11-10T03:58:37+00:00"}
 {"code": "b8c3f2f73bf", "id": "rescue", "kind": "rater-probe-draft", "utc": "2026-11-10T05:01:20+00:00"}
+{"code": "b3fb24440ab", "id": "study-baseline", "kind": "rater-study-baseline", "utc": "2026-11-17T12:16:17+00:00"}
+{"code": "bd10f132d42", "id": "study-clips", "kind": "rater-study-clips", "utc": "2026-11-17T12:16:44+00:00"}
