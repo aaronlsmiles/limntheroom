@@ -2,6 +2,10 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 19 Nov 2026 (later): the close complete (hub calls 181–182)
+
+- The rating study's database schema is dropped, after it left the Data API; the other two schemas on that database still answer. The secret key is rotated. Steps 1–10 of the close are done.
+
 ## 19 Nov 2026: close steps 9 and 10 (hub call 180)
 
 - **Take-down:** the rating host's Vercel project is deleted. The raw rows were already committed and hashed. `.gitignore` now ignores only what stays private or local, since `sealed/` and `rating/studies/` are tracked. The blindpanel v0.2.0 worktree is removed (tag `v0.2.0` keeps the commit).
