@@ -2,6 +2,19 @@
 Newest first. A "call" or "hub call" is a numbered decision in the studio's private calls file; each one that shaped the study is summarised here, without the laws.
 The registered outputs in `runs/registration/` record the local interpreter path they ran under (a home folder on the machine that ran them); it is not a secret, and registered outputs are never hand-edited.
 
+## 19 Nov 2026: close steps 9 and 10 (hub call 180)
+
+- **Take-down:** the rating host's Vercel project is deleted. The raw rows were already committed and hashed. `.gitignore` now ignores only what stays private or local, since `sealed/` and `rating/studies/` are tracked. The blindpanel v0.2.0 worktree is removed (tag `v0.2.0` keeps the commit).
+- **Waiting on the author's Supabase login:** take `blindpanel` off the Data API's exposed schemas, then drop it (the database also serves two other apps); rotate the secret key a copy of which lived in the deleted project.
+- **Records:** the card is done on the planner at about £66 (8,408 credits).
+
+## 18 Nov 2026 (afternoon): after the study, and step 8 public (hub calls 172–179)
+
+- **A correction (call 177).** At the probe, aleph2 did move the ink creature: it redrew it as a hatched animal that rears up and walks where it lies, but never out of its place on the page. "The one that kept time did not animate it" said more than the render shows; the write-up, thesis, seam view and film now say it "moved it only where it lay, never out of its place" (§19's test of coming to life).
+- **After the study (call 178; Aaron's go and his top-up).** The five cues the study never reached (t02–t06) were rendered on seedance2_5 from their requests as compiled at Gate R, and the curtain call (t07e) from its hand-written request on two seeds, its times measured from the take (beam peaks: ink 3.17 s, gold 3.60 s, paper 4.23 s; bow at 7.50 s). Logged apart in `runs/after/`. **Unregistered, unrated, not part of the results.** By eye, every cue performs (the creature climbs onto the hand; shivers at the breath; jumps at the note). The registered gate on the five: each held the room in every frame it returned and failed on length alone, 0.06–0.8 s short. Curtain seed 2 is kept; seed 1 reframed the camera. 3,949 credits.
+- **Hume's TTS API was retired on 13 Nov (call 177),** so the films are captions only, with P02's Suno score and the takes' room sound.
+- **Public (call 179):** the thesis; the seam view at limntheroom.studionephele.com with an "After the study" section; the study film and "After the study" on the media host; the site entry (studionephele.com v1.50). Each piece passed publish-clearance after fixes.
+
 ## 18 Nov 2026: the write-up's observations section, and two things left as published (hub call 171)
 
 - **The unregistered observations go into the write-up** (Aaron, call 171): a section after "What was never made", marked post-hoc and not results under §21 step 10. It changes text that goes public, so a fresh gate review reads the revised write-up before the push.
